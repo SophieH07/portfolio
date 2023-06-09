@@ -1,9 +1,14 @@
 import "./App.css";
+import { Header } from "./Layout/Header";
+import { MainBody } from "./MainBody";
+import { Footer } from "./Layout/Footer";
 
 function App() {
   return (
     <div className="App">
-      <h1>Portfolio</h1>
+      <Header />
+      <MainBody />
+      <Footer />
     </div>
   );
 }
