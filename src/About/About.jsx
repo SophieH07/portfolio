@@ -47,7 +47,9 @@ export const About = () => {
         </div>
       </section>
       <section id="work">
-        <h1>Work Experience</h1>
+        <div className="text-4xl uppercase text-center pt-10">
+          Work Experience
+        </div>
         <div>
           <p>Agco Kft.</p>
           <p>Budapest, Hungary || hybrid</p>
@@ -56,13 +58,14 @@ export const About = () => {
         </div>
       </section>
       <section id="language">
-        <h1>Languages</h1>
-
-        <div>Hungarian</div>
-        <div>mother tounge</div>
-
-        <div>English</div>
-        <div>C1 - advanced</div>
+        <div className="text-4xl uppercase text-center py-10">Languages</div>
+        <div className="grid justify-center text-center items-center uppercase">
+          <div className="text-xl font-medium">Hungarian</div>
+          <div>mother tounge</div>
+          <hr className="my-12 h-0.5 border-t-0 w-40 bg-neutral-100 opacity-100 dark:opacity-50" />
+          <div className="text-xl ont-medium">English</div>
+          <div>C1 - advanced</div>
+        </div>
       </section>
     </div>
   );
