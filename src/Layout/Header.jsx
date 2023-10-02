@@ -15,7 +15,7 @@ const Header = () => {
     },
     {
       id: 2,
-      link: "tech_skills",
+      link: "skills",
     },
     {
       id: 3,
@@ -40,7 +40,7 @@ const Header = () => {
   ];
 
   return (
-    <nav className="fixed flex items-center flex-wrap w-full uppercase justify-end bg-slate-900 bg-opacity-40 ">
+    <nav className="fixed flex items-center flex-wrap w-full uppercase justify-end bg-slate-900 bg-opacity-60 ">
       <div className="lg:hidden">
         <button
           onClick={toggleMenu}

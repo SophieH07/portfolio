@@ -36,9 +36,7 @@ const Project = () => {
 
   return (
     <section id="project">
-      <div className="text-4xl font-bold uppercase text-center pt-8 pb-10">
-        Projects
-      </div>
+      <div className="text-4xl font-bold uppercase">Projects</div>
       <div
         className={`fixed top-0 left-0 z-90 w-screen h-screen bg-black/70 flex justify-center items-center ${
           imageHidden ? "hidden" : ""
@@ -50,7 +48,7 @@ const Project = () => {
           className="max-w-[1000px] max-h-[800px] object-cover"
         />
       </div>
-      <div className="grid grid-flow-row gap-4 text-neutral-600 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-8">
+      <div className="grid grid-flow-row gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-8 text-gray-300">
         {projects.map((project) => (
           <div key={project.id}>
             <div className="my-8 rounded shadow-lg shadow-gray-900 bg-slate-200 bg-opacity-20 hover:shadow-gray-600 text-center">
@@ -59,13 +57,13 @@ const Project = () => {
                 className="rounded-t h-72 w-full object-cover cursor-pointer"
                 onClick={(e) => showImage(e.target.src)}
               />
-              <p className="text-lg mb-4 font-medium leading-relaxed text-slate-300">
+              <p className="text-lg mb-4 font-medium leading-relaxed ">
                 {project.description}
               </p>
               <a
                 href={project.code}
                 target="_blank"
-                className="uppercase font-bold text-white"
+                className="uppercase font-bold hover:text-white"
               >
                 Github Code
               </a>
@@ -73,7 +71,7 @@ const Project = () => {
                 <a
                   href={project.website}
                   target="_blank"
-                  className="uppercase font-bold text-white pl-2"
+                  className="uppercase font-bold hover:text-white pl-2"
                 >
                   Website Link
                 </a>

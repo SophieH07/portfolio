@@ -63,10 +63,8 @@ const TechSkills = () => {
   ];
 
   return (
-    <section id="tech_skills" className="lg:block">
-      <div className="text-4xl font-bold uppercase text-center pt-10 pb-16">
-        Tech Skills
-      </div>
+    <section id="skills">
+      <div className="text-4xl font-bold uppercase">Tech Skills</div>
       <div className="flex justify-center items-center">
         <div className="cursor-default grid grid-flow-row gap-2 uppercase font-medium sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 text-center max-w-screen-lg">
           {skillSet.map(({ id, skill }) => (
