@@ -1,0 +1,10 @@
+section {
+	/* display: grid; */
+	height: 100vh;
+    padding-top: 5em;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(33,9,121,1) 44%, rgba(29,239,255,1) 100%);
+    color: white;
+}

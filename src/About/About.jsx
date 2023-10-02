@@ -1,36 +1,52 @@
 import React from "react";
+import profilePic from "../pics/profile.jpg";
+import { Skills } from "./TechSkills";
 
 export const About = () => {
   return (
     <div>
-      <div>
-        <h3>Hello on my website!</h3>
-        <h2>My name is Zsófia Szaniszló</h2>
-        <h3>I'm a Software Developer from Hungary</h3>
-      </div>
-      <div id="tech_skills">
-        <h1>Tech Skills</h1>
+      {/* Home Page */}
+      <section id="home" className="inline-flex pl-40 ms:grid">
         <div>
-          <p>React, Redux, PL/SQL</p>
-        </div>
-      </div>
-      <div id="education">
-        <h1>Education</h1>
-        <div>
-          <div>
-            <p>IU University of Applied Sciences</p>
-            <p>Located in Germany, taken classes online</p>
-            <p>2023 - ongoing</p>
-            <p>Computer Science, Bachelor's degree</p>
+          <div className="py-20 text-6xl">Welcome!</div>
+          <div className="py-8 text-4xl">My name is Zsófia Szaniszló</div>
+          <div className="py-8 text-4xl">
+            I'm a Software Developer from Hungary
           </div>
         </div>
-        <div>
-          <p>Codecool</p>
-          <p>Junior Full Stack Software Developer</p>
-          <p>Budapest, Hungary 2019 - 2020</p>
+        <div className="ml-40 pt-20">
+          <img style={{ width: "440px" }} src={profilePic} />
         </div>
-      </div>
-      <div id="work">
+        {/* Tech Skills */}
+      </section>
+      <section id="tech_skills" className="lg:block">
+        <div className="text-4xl uppercase text-center pt-10 pb-16">
+          Tech Skills
+        </div>
+        <Skills />
+      </section>
+      {/* Education */}
+      <section id="education">
+        <div className="text-4xl uppercase text-center pt-10">Education</div>
+        <div className="inline-flex justify-center">
+          <div className="pr-5">
+            <p className="uppercase font-medium text-xl pb-3">Codecool</p>
+            <p className="py-2">Junior Full-Stack Software Developer</p>
+            <p className="py-2">Budapest, Hungary</p>
+            <p className="py-2">2019 - 2020</p>
+          </div>
+          <div className="inline-block h-[250px] min-h-[1em] w-0.5 self-stretch bg-white opacity-80"></div>
+          <div className="pl-5">
+            <p className="uppercase font-medium text-xl pb-3">
+              IU University of Applied Sciences
+            </p>
+            <p className="py-2">Bachelor's degree in Computer Science</p>
+            <p className="py-2">Located in Germany, taken classes online</p>
+            <p className="py-2">2023 - ongoing</p>
+          </div>
+        </div>
+      </section>
+      <section id="work">
         <h1>Work Experience</h1>
         <div>
           <p>Agco Kft.</p>
@@ -38,8 +54,8 @@ export const About = () => {
           <p>2021 - 2023</p>
           <p>PL/SQL, JavaScript, HTML, CSS</p>
         </div>
-      </div>
-      <div id="language">
+      </section>
+      <section id="language">
         <h1>Languages</h1>
 
         <div>Hungarian</div>
@@ -47,7 +63,7 @@ export const About = () => {
 
         <div>English</div>
         <div>C1 - advanced</div>
-      </div>
+      </section>
     </div>
   );
 };
