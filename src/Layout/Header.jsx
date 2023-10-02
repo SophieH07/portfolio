@@ -33,6 +33,10 @@ export const Header = () => {
       id: 6,
       link: "project",
     },
+    {
+      id: 7,
+      link: "contact",
+    },
   ];
 
   return (

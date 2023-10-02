@@ -1,13 +1,24 @@
-import "./App.css";
-import { Header } from "./Layout/Header";
-import { MainBody } from "./MainBody";
-import { Footer } from "./Layout/Footer";
+import Header from "./layout/Header";
+import TechSkills from "./component/TechSkill";
+import Project from "./component/Project";
+import Home from "./component/Home";
+import Education from "./component/Education";
+import WorkExperience from "./component/WorkExperience";
+import Contact from "./component/Contact";
+import Footer from "./layout/Footer";
+import Language from "./component/Language";
 
 function App() {
   return (
     <div>
       <Header />
-      <MainBody />
+      <Home />
+      <TechSkills />
+      <Education />
+      <WorkExperience />
+      <Language />
+      <Project />
+      <Contact />
       <Footer />
     </div>
   );

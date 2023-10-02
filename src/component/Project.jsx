@@ -3,7 +3,9 @@ import React from "react";
 export const Project = () => {
   return (
     <section id="project">
-      <h1>Projects</h1>
+      <div className="text-4xl font-bold uppercase text-center pt-10 pb-16">
+        Projects
+      </div>
       <p>Here you can see what I coded for myself to practice:</p>
       <div>
         <p>Later...</p>
