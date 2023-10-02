@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 
-export const Header = () => {
+const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   function toggleMenu() {
@@ -75,3 +75,5 @@ export const Header = () => {
     </nav>
   );
 };
+
+export default Header;

@@ -5,10 +5,10 @@ import Home from "./component/Home";
 import Education from "./component/Education";
 import WorkExperience from "./component/WorkExperience";
 import Contact from "./component/Contact";
-import Footer from "./layout/Footer";
 import Language from "./component/Language";
+import Footer from "./layout/Footer";
 
-function App() {
+const App = () => {
   return (
     <div>
       <Header />
@@ -22,6 +22,5 @@ function App() {
       <Footer />
     </div>
   );
-}
-
+};
 export default App;

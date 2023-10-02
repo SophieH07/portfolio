@@ -1,4 +1,4 @@
-export const TechSkills = () => {
+const TechSkills = () => {
   const skillSet = [
     {
       id: 1,
@@ -82,3 +82,5 @@ export const TechSkills = () => {
     </section>
   );
 };
+
+export default TechSkills;

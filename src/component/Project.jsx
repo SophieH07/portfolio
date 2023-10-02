@@ -1,6 +1,4 @@
-import React from "react";
-
-export const Project = () => {
+const Project = () => {
   return (
     <section id="project">
       <div className="text-4xl font-bold uppercase text-center pt-10 pb-16">
@@ -13,3 +11,5 @@ export const Project = () => {
     </section>
   );
 };
+
+export default Project;
