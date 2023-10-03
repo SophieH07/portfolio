@@ -2,7 +2,7 @@ const Education = () => {
   return (
     <section id="education">
       <div className="text-4xl font-bold uppercase">Education</div>
-      <div className="inline-flex justify-center">
+      <div className="inline-flex justify-center p-5">
         <div className="pr-5">
           <p className="uppercase font-medium text-xl pb-3">Codecool</p>
           <p className="py-2">Junior Full-Stack Software Developer</p>

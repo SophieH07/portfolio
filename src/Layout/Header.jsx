@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 
-const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
+const Header = ({ isOpen, setIsOpen }) => {
   function toggleMenu() {
     setIsOpen(!isOpen);
   }
@@ -57,7 +55,7 @@ const Header = () => {
         </button>
       </div>
       <ul
-        className={`w-full min-h-full block lg:flex lg:items-center lg:w-auto ${
+        className={`w-full min-h-full z-0 block lg:flex lg:items-center lg:w-auto ${
           isOpen ? "" : "hidden"
         }`}
       >

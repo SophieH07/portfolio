@@ -6,7 +6,7 @@ section {
     display: grid;
 	place-items: center;
 	height: 90vh;
-    padding-top: 5em;
+    padding-top: 3em;
 }
 
 body {

@@ -7,9 +7,13 @@ const Home = () => {
     <section id="home">
       <div className="inline-flex">
         <div>
-          <div className="pt-20 pb-12 text-6xl font-bold">Welcome!</div>
-          <div className="py-6 text-4xl">My name is Zsófia Szaniszló</div>
-          <div className="py-8 text-4xl">
+          <div className="pt-20 pb-12 lg:text-6xl md:text-4xl font-bold">
+            Welcome!
+          </div>
+          <div className="lg:py-6 lg:text-4xl md:text-2xl">
+            My name is Zsófia Szaniszló
+          </div>
+          <div className="lg:py-8 lg:text-4xl md:text-2xl">
             I'm a Software Developer from Hungary
           </div>
           <div className="inline-flex">
@@ -28,7 +32,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="ml-40 pt-16">
+        <div className="lg:ml-40 md:ml-10 pt-16">
           <img style={{ width: "440px" }} src={profilePic} />
         </div>
       </div>

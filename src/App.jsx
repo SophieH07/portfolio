@@ -7,11 +7,20 @@ import WorkExperience from "./component/WorkExperience";
 import Contact from "./component/Contact";
 import Language from "./component/Language";
 import Footer from "./layout/Footer";
+import { useState } from "react";
 
 const App = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  function closeMenu() {
+    if (isOpen) {
+      setIsOpen(false);
+    }
+  }
+
   return (
-    <div>
-      <Header />
+    <div onClick={closeMenu}>
+      <Header isOpen={isOpen} setIsOpen={setIsOpen} />
       <Home />
       <TechSkills />
       <Education />
