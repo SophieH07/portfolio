@@ -30,8 +30,3 @@ body {
     background: #253443;
     cursor: pointer;
 }
-
-.thank-message {
-    opacity: 0;
-    transition: all 250ms linear 2s;
-}
