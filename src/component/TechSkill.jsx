@@ -38,7 +38,7 @@ const TechSkills = () => {
     },
     {
       id: 10,
-      skill: "Svelte",
+      skill: "PostgreSQL",
     },
     {
       id: 11,
@@ -55,10 +55,6 @@ const TechSkills = () => {
     {
       id: 14,
       skill: "Java",
-    },
-    {
-      id: 15,
-      skill: "PostgreSQL",
     },
   ];
 
