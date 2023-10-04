@@ -38,7 +38,7 @@ const Contact = () => {
   return (
     <section id="contact">
       <div className="text-4xl font-bold uppercase pb-2">Contact Me</div>
-      <div className={`${emailSent ? "" : "hidden"}`}>
+      <div className={`ease-in duration-300 ${emailSent ? "" : "hidden"}`}>
         Thank you for your message!
       </div>
 
