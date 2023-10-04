@@ -66,7 +66,7 @@ const TechSkills = () => {
           {skillSet.map(({ id, skill }) => (
             <div
               key={id}
-              className="lg:p-6 hover:bg-slate-200 hover:bg-opacity-20 hover:rounded"
+              className="p-2 lg:p-6 hover:bg-slate-200 hover:bg-opacity-20 hover:rounded"
             >
               {skill}
             </div>

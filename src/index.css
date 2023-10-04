@@ -14,16 +14,12 @@ body {
     color: white;
 }
 
+/* SCROLLBAR */
+
 ::-webkit-scrollbar { 
     width: 10px; 
-} 
-  
-/* Track */
-/* ::-webkit-scrollbar-track { 
-    background: #a0e1f3;
-    opacity: 0.1;
-}  */
-  
+}
+
 /* Handle */
 ::-webkit-scrollbar-thumb { 
     background: #374554;
@@ -33,4 +29,9 @@ body {
 ::-webkit-scrollbar-thumb:hover { 
     background: #253443;
     cursor: pointer;
+}
+
+.thank-message {
+    opacity: 0;
+    transition: all 250ms linear 2s;
 }
