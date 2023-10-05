@@ -32,7 +32,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="lg:ml-40 lg:mt-3 md:ml-20 pt-10 max-w-[40%] ml-4 lg:max-w-[30%] xl:max-w-[32%]">
+        <div className="lg:ml-40 lg:mt-3 sm:pt-5 sm:max-w-[15em] md:ml-20 pt-10 max-w-[40%] ml-4 lg:max-w-[30%] xl:max-w-[32%]">
           <img src={profilePic} />
         </div>
       </div>

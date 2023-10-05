@@ -62,11 +62,11 @@ const TechSkills = () => {
     <section id="skills">
       <div className="text-4xl font-bold uppercase">Tech Skills</div>
       <div className="flex justify-center items-center">
-        <div className="cursor-default grid grid-flow-row gap-2 uppercase font-medium sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 text-center max-w-screen-lg">
+        <div className="cursor-default grid grid-flow-row gap-0 uppercase font-medium sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 text-center max-w-screen-lg">
           {skillSet.map(({ id, skill }) => (
             <div
               key={id}
-              className="p-0 sm:p-4 lg:p-6 md:p-6 xl:p-6 hover:bg-slate-200 hover:bg-opacity-20 hover:rounded"
+              className="p-0 sm:p-2 lg:p-6 md:p-4 xl:p-6 hover:bg-slate-200 hover:bg-opacity-20 hover:rounded"
             >
               {skill}
             </div>

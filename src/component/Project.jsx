@@ -83,7 +83,7 @@ const Project = () => {
   return (
     <section id="project">
       {/*if more projects, add: mb-20 mt-4 */}
-      <div className="text-4xl font-bold uppercase sm:pb-4">Projects</div>
+      <div className="text-4xl font-bold uppercase sm:pb-9">Projects</div>
       <div
         className={`fixed top-0 left-0 z-90 w-screen h-screen bg-black/70 flex justify-center items-center ${
           imageHidden ? "hidden" : ""
