@@ -37,12 +37,12 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <div className="text-4xl font-bold uppercase pb-2">Contact Me</div>
-      <div className={`ease-in duration-300 ${emailSent ? "" : "hidden"}`}>
+      <div className="text-4xl font-bold uppercase pb-4">Contact Me</div>
+      <div className={`${emailSent ? "" : "hidden"}`}>
         Thank you for your message!
       </div>
 
-      <div className="uppercase grid w-3/4 pt-3 bg-gray-600 bg-opacity-20 p-5 rounded-md shadow-sm space-y-4 mb-2">
+      <div className="uppercase grid w-3/4 lg:w-2/3 xl:w-2/3 pt-3 bg-gray-600 bg-opacity-20 p-5 rounded-md shadow-sm space-y-4 mb-6">
         <form ref={form} onSubmit={sendEmail}>
           <div>
             <label className="block font-medium pb-2 text-sm text-gray-300 rounded-lg">
@@ -92,7 +92,7 @@ const Contact = () => {
           <p className="text-red-600 pt-2">{error}</p>
         </form>
       </div>
-      <div className="flex justify-center w-full  bg-slate-700 bg-opacity-30 font-medium text-slate-300 py-2">
+      <div className="flex justify-center w-full bg-slate-700 bg-opacity-30 font-medium text-slate-300 py-2">
         <div className="lg:text-lg pr-4">
           Made with: Vite, React, Tailwind CSS
         </div>{" "}
