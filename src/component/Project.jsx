@@ -83,7 +83,7 @@ const Project = () => {
   return (
     <section id="project">
       {/*if more projects, add: mb-20 mt-4 */}
-      <div className="text-4xl font-bold uppercase">Projects</div>
+      <div className="text-4xl font-bold uppercase sm:pb-4">Projects</div>
       <div
         className={`fixed top-0 left-0 z-90 w-screen h-screen bg-black/70 flex justify-center items-center ${
           imageHidden ? "hidden" : ""
@@ -92,10 +92,10 @@ const Project = () => {
       >
         <img
           id="modal-image"
-          className="max-w-[1000px] max-h-[800px] object-cover"
+          className="max-h-[95%] max-w-[95%] object-cover"
         />
       </div>
-      <div className="max-h-[75vh] max-w-[97%] grid grid-flow-row overflow-y-scroll gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 px-8 text-gray-300 pb-7">
+      <div className="max-h-[70vh] max-w-[97%] grid grid-flow-row overflow-y-scroll gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 px-8 text-gray-300 pb-7">
         {projects.map((project) => (
           <div key={project.id}>
             <div className="rounded shadow-lg shadow-gray-900 bg-black bg-opacity-40 hover:shadow-gray-600 text-center">

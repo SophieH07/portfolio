@@ -7,7 +7,7 @@ const Home = () => {
     <section id="home">
       <div className="inline-flex">
         <div>
-          <div className="pt-20 pb-12 lg:text-6xl md:text-4xl font-bold">
+          <div className="pt-16 lg:pt-20 pb-12 lg:text-6xl md:text-4xl font-bold">
             Welcome!
           </div>
           <div className="lg:py-6 lg:text-4xl md:text-2xl">
@@ -32,8 +32,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="lg:ml-40 md:ml-10 pt-16">
-          <img style={{ width: "440px" }} src={profilePic} />
+        <div className="lg:ml-40 md:ml-10 pt-10 max-w-[40%] ml-4">
+          <img src={profilePic} />
         </div>
       </div>
     </section>

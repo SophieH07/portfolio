@@ -9,7 +9,7 @@ const Education = () => {
           <p className="py-2">Budapest, Hungary</p>
           <p className="py-2">2019 - 2020</p>
         </div>
-        <div className="inline-block h-[250px] min-h-[1em] w-0.5 self-stretch bg-white opacity-80"></div>
+        <div className="inline-block h-[250px] sm:h-[200px] min-h-[1em] w-0.5 self-stretch bg-white opacity-80"></div>
         <div className="pl-5">
           <p className="uppercase font-medium text-xl pb-3">
             IU University of Applied Sciences
