@@ -42,7 +42,7 @@ const Header = ({ isOpen, setIsOpen }) => {
       <div className="lg:hidden">
         <button
           onClick={toggleMenu}
-          className="px-2 lg:py-2 rounded text-white hover:bg-slate-400 hover:bg-opacity-20"
+          className="px-2 py-2 rounded text-white hover:bg-slate-400 hover:bg-opacity-20"
         >
           <svg
             className="fill-current h-8 w-8"
