@@ -6,7 +6,6 @@ import Education from "./component/Education";
 import WorkExperience from "./component/WorkExperience";
 import Contact from "./component/Contact";
 import Language from "./component/Language";
-import Footer from "./layout/Footer";
 import { useState } from "react";
 
 const App = () => {
@@ -28,7 +27,6 @@ const App = () => {
       <Language />
       <Project />
       <Contact />
-      <Footer />
     </div>
   );
 };
