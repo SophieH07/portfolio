@@ -38,7 +38,7 @@ const Header = ({ isOpen, setIsOpen }) => {
   ];
 
   return (
-    <nav className="fixed flex items-center flex-wrap w-full uppercase justify-end bg-slate-900 bg-opacity-60 ">
+    <nav className="fixed z-50 flex items-center flex-wrap w-full uppercase justify-end bg-slate-900 bg-opacity-60 ">
       <div className="lg:hidden">
         <button
           onClick={toggleMenu}

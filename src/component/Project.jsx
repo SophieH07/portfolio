@@ -26,48 +26,6 @@ const Project = () => {
       code: "https://github.com/SophieH07/prompt_collector_nytud",
       website: "https://prompt.nytud.hu/",
     },
-
-    // {
-    //   id: 3,
-    //   picture: PromptCollector,
-    //   title: "Prompt collector",
-    //   description:
-    //     "I'm currently working for the Hungarian Research Centre for Linguistics to create a Hungarian ChatGPT. This page helps send in prompts and answers by the AI and to evalute them. Created with Next.js, PostgreSQL, and Docker",
-    //   language: "NextJs, PostgreSQL, Docker",
-    //   code: "https://github.com/SophieH07/prompt_collector_nytud",
-    //   website: "https://prompt.nytud.hu/",
-    // },
-
-    // {
-    //   id: 4,
-    //   picture: PromptCollector,
-    //   title: "Prompt collector",
-    //   description:
-    //     "I'm currently working for the Hungarian Research Centre for Linguistics to create a Hungarian ChatGPT. This page helps send in prompts and answers by the AI and to evalute them. Created with Next.js, PostgreSQL, and Docker",
-    //   language: "NextJs, PostgreSQL, Docker",
-    //   code: "https://github.com/SophieH07/prompt_collector_nytud",
-    //   website: "https://prompt.nytud.hu/",
-    // },
-    // {
-    //   id: 5,
-    //   picture: Tatatarot,
-    //   title: "Tatatarot",
-    //   description:
-    //     "I created this simple tarot card picker and describer for fun. I learnt animation and practiced front-end with this project.",
-    //   language: "React, JS, HTML, CSS",
-    //   code: "https://github.com/SophieH07/tatatarot",
-    //   website: "",
-    // },
-    // {
-    //   id: 6,
-    //   picture: Tatatarot,
-    //   title: "Tatatarot",
-    //   description:
-    //     "I created this simple tarot card picker and describer for fun. I learnt animation and practiced front-end with this project.",
-    //   language: "React, JS, HTML, CSS",
-    //   code: "https://github.com/SophieH07/tatatarot",
-    //   website: "",
-    // },
   ];
 
   function toggleShowImage() {
