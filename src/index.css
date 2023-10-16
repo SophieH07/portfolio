@@ -14,6 +14,12 @@ body {
     color: white;
 }
 
+#home {
+    place-items: center;
+    height: 90vh;
+    padding-top: 4em;
+}
+
 /* SCROLLBAR */
 
 ::-webkit-scrollbar { 
