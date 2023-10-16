@@ -1,5 +1,6 @@
 import Tatatarot from "../project_pictures/tatatarot.png";
 import PromptCollector from "../project_pictures/nytud_prompt_collector.png";
+import Tatatarot2 from "../project_pictures/tatatarot.v.2.png";
 import { useState } from "react";
 
 const Project = () => {
@@ -18,6 +19,16 @@ const Project = () => {
     },
     {
       id: 2,
+      picture: Tatatarot2,
+      title: "Tatatarot",
+      description:
+        "I recreated my first tarot card generator using AI generated images, to create it with new technologies",
+      language: "React, Tailwind CSS, image AI, Vite",
+      code: "https://github.com/SophieH07/tatatarot.v.2.0",
+      website: "https://tatatarot.netlify.app/",
+    },
+    {
+      id: 3,
       picture: PromptCollector,
       title: "Prompt collector",
       description:
