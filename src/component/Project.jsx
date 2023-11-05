@@ -1,6 +1,7 @@
 import Tatatarot from "../project_pictures/tatatarot.png";
 import PromptCollector from "../project_pictures/nytud_prompt_collector.png";
 import Tatatarot2 from "../project_pictures/tatatarot.v.2.png";
+import DemoNytud from "../project_pictures/demotest.png";
 import { useState } from "react";
 
 const Project = () => {
@@ -36,6 +37,16 @@ const Project = () => {
       language: "NextJs, PostgreSQL, Docker",
       code: "https://github.com/SophieH07/prompt_collector_nytud",
       website: "https://prompt.nytud.hu/",
+    },
+    {
+      id: 4,
+      picture: DemoNytud,
+      title: "NYTK Demo",
+      description:
+        "I'm currently working for the Hungarian Research Centre for Linguistics to create a Hungarian ChatGPT. This page shows a demo of their current projects",
+      language: "Svelte, Tailwind CSS, Vite, Docker",
+      code: "",
+      website: "https://juniper.nytud.hu/demotest/",
     },
   ];
 
@@ -80,13 +91,17 @@ const Project = () => {
               <p className="text-sm mb-4 px-2 font-medium uppercase">
                 {project.language}
               </p>
-              <a
-                href={project.code}
-                target="_blank"
-                className="uppercase font-bold hover:text-white"
-              >
-                Github Code
-              </a>
+              {project.code != "" ? (
+                <a
+                  href={project.code}
+                  target="_blank"
+                  className="uppercase font-bold hover:text-white"
+                >
+                  Github Code
+                </a>
+              ) : (
+                <p></p>
+              )}
               {project.website != "" ? (
                 <a
                   href={project.website}
