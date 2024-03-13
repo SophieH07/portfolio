@@ -92,8 +92,8 @@ const Contact = () => {
           <p className="text-red-600 pt-2">{error}</p>
         </form>
       </div>
-      <div className="flex justify-center w-full bg-slate-700 bg-opacity-30 font-medium text-slate-300 py-2 text-sm">
-        <div className="pr-4">Made with: Vite, React, Tailwind CSS</div>{" "}
+      <div className="flex justify-center w-full font-medium text-slate-300 py-2 text-sm">
+        <div className="px-2">Made with: Vite, React, Tailwind CSS</div>{" "}
         <div>
           You can find the code of this portfolio{" "}
           <a

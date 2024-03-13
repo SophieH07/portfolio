@@ -46,7 +46,7 @@ const Project = () => {
         "I'm currently working for the Hungarian Research Centre for Linguistics to create a Hungarian ChatGPT. This page shows a demo of their current projects",
       language: "Svelte, Tailwind CSS, Vite, Docker",
       code: "",
-      website: "https://juniper.nytud.hu/demotest/",
+      website: "https://puli.nytud.hu/",
     },
   ];
 

@@ -13,33 +13,21 @@ const Header = ({ isOpen, setIsOpen }) => {
     },
     {
       id: 2,
-      link: "skills",
+      link: "about",
     },
     {
       id: 3,
-      link: "education",
-    },
-    {
-      id: 4,
-      link: "work",
-    },
-    {
-      id: 5,
-      link: "language",
-    },
-    {
-      id: 6,
       link: "project",
     },
     {
-      id: 7,
+      id: 4,
       link: "contact",
     },
   ];
 
   return (
     <nav className="fixed z-50 flex items-center flex-wrap w-full uppercase justify-end bg-slate-900 bg-opacity-60 ">
-      <div className="lg:hidden">
+      <div className="md:hidden">
         <button
           onClick={toggleMenu}
           className="px-2 py-2 rounded text-white hover:bg-slate-400 hover:bg-opacity-20"
@@ -55,7 +43,7 @@ const Header = ({ isOpen, setIsOpen }) => {
         </button>
       </div>
       <ul
-        className={`w-full min-h-full z-0 block lg:flex lg:items-center lg:w-auto ${
+        className={`w-full min-h-full z-0 block md:flex md:items-center md:w-auto ${
           isOpen ? "" : "hidden"
         }`}
       >
