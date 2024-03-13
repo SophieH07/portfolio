@@ -52,7 +52,13 @@ const Header = ({ isOpen, setIsOpen }) => {
             key={id}
             className="block text-center p-2 lg:p-4 font-medium cursor-pointer text-gray-200 hover:text-white duration-200"
           >
-            <Link activeClass="active" smooth spy to={link}>
+            <Link
+              activeClass="active"
+              smooth
+              spy
+              to={link}
+              onClick={() => setIsOpen(false)}
+            >
               {link}
             </Link>
           </li>
