@@ -68,19 +68,19 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="md:grid md:grid-flow-col-dense justify-center items-center mx-8"
+      className="sm:grid sm:grid-flow-col lg:flex justify-center items-center px-10"
     >
-      <div>
-        <div className="text-2xl lg:pt-18 pb-10 lg:text-6xl md:text-5xl font-bold">
+      <div className="pr-5 pb-5">
+        <div className="text-xl lg:pt-18 pb-10 lg:text-6xl md:text-5xl font-bold">
           Welcome!
         </div>
-        <div className="lg:py-6 lg:text-4xl md:text-2xl text-xl">
+        <div className="lg:py-6 lg:text-4xl md:text-xl text-lg">
           My name is Zsófia Szaniszló
         </div>
-        <div className="lg:py-8 lg:text-4xl md:text-2xl text-xl">
+        <div className="lg:py-8 lg:text-4xl md:text-xl text-lg">
           I'm a Software Developer from Hungary
         </div>
-        <div className="inline-flex">
+        <div className="inline-flex pt-2">
           <div className="cursor-pointer pr-3">
             <a href="https://github.com/SophieH07" target="_blank">
               <img src={github} />{" "}
@@ -96,8 +96,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center md:pl-10 lg:pl-10 xl:pl-10">
-        <div className="cursor-default grid grid-flow-row gap-0 uppercase font-medium grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 text-center max-w-screen-lg bg-black bg-opacity-10">
+      <div className="flex justify-center items-center">
+        <div className="cursor-default grid grid-flow-row gap-0 uppercase font-medium grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 text-center max-w-screen-lg bg-black bg-opacity-10">
           {skillSet.map(({ id, skill }) => (
             <div
               key={id}
