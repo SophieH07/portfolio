@@ -57,10 +57,6 @@ const Home = () => {
     },
     {
       id: 14,
-      skill: "Java",
-    },
-    {
-      id: 15,
       skill: "Python",
     },
   ];

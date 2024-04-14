@@ -19,7 +19,7 @@ const About = () => {
             IU University of Applied Sciences
           </p>
           <p>Bachelor's degree in Computer Science</p>
-          <p>Located in Germany, taken classes online</p>
+          <p>Located in Germany, taking classes online</p>
           <p>2023 - ongoing</p>
         </div>
       </div>
@@ -29,9 +29,17 @@ const About = () => {
         </div>
         <div>
           <p className="uppercase font-medium text-xl py-3">
+            Dialogue Creatives
+          </p>
+          <p>Budapest, Hungary || hybrid</p>
+          <p>2024 - currently</p>
+          <p></p>
+        </div>
+        <div>
+          <p className="uppercase font-medium text-xl py-3">
             Nyelvtudományi Kutatóközpont
             <br />
-            Hungarian Research Cendive for Linguistics
+            Hungarian Research Centre for Linguistics
           </p>
           <p>Budapest, Hungary || remote</p>
           <p>2023 - currently</p>
