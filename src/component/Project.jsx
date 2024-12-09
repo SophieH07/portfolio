@@ -2,6 +2,7 @@ import Tatatarot from "../project_pictures/tatatarot.png";
 import PromptCollector from "../project_pictures/nytud_prompt_collector.png";
 import Tatatarot2 from "../project_pictures/tatatarot.v.2.png";
 import DemoNytud from "../project_pictures/demotest.png";
+import BookCatalogue from "../project_pictures/book_catalogue.png";
 import { useState } from "react";
 
 const Project = () => {
@@ -47,6 +48,16 @@ const Project = () => {
       language: "Svelte, Tailwind CSS, Vite, Docker",
       code: "",
       website: "https://puli.nytud.hu/",
+    },
+    {
+      id: 5,
+      picture: BookCatalogue,
+      title: "Book Catalogue",
+      description:
+        "This was a project for a course at the IU University where I am currently enrolled",
+      language: "ReactJS, TailwindCSS, Vite, NodeJS, MongoDB, Express, Docker",
+      code: "https://github.com/SophieH07/book-catalogue",
+      website: "",
     },
   ];
 
