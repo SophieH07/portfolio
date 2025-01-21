@@ -33,7 +33,7 @@ const About = () => {
           </p>
           <p>Budapest, Hungary || hybrid</p>
           <p>2024 - currently</p>
-          <p></p>
+          <p>Next.js, TypeScript, Docker, Tailwind CSS, JavaScript, React</p>
         </div>
         <div>
           <p className="uppercase font-medium text-xl py-3">
