@@ -2,9 +2,9 @@ const About = () => {
   return (
     <section
       id="about"
-      className="text-center md:grid md:grid-flow-col-dense justify-center items-center mx-10"
+      className="text-center md:grid md:grid-flow-col-dense justify-center items-center"
     >
-      <div className="pt-8 md:mr-4 lg:mr-4 xl:mr-4">
+      <div className="mr-0 md:mr-10">
         <div>
           <p className="text-4xl font-bold uppercase pb-4">Education</p>
         </div>
@@ -23,36 +23,7 @@ const About = () => {
           <p>2023 - ongoing</p>
         </div>
       </div>
-      <div className="pt-8">
-        <div>
-          <p className="text-4xl font-bold uppercase pb-4">Work Experience</p>
-        </div>
-        <div>
-          <p className="uppercase font-medium text-xl py-3">
-            Dialogue Creatives
-          </p>
-          <p>Budapest, Hungary || hybrid</p>
-          <p>2024 - currently</p>
-          <p></p>
-        </div>
-        <div>
-          <p className="uppercase font-medium text-xl py-3">
-            Nyelvtudományi Kutatóközpont
-            <br />
-            Hungarian Research Centre for Linguistics
-          </p>
-          <p>Budapest, Hungary || remote</p>
-          <p>2023 - currently</p>
-          <p>PostgreSQL, Docker, Tailwind CSS, Next.js, Svelte</p>
-        </div>
-        <div>
-          <p className="uppercase font-medium text-xl py-3">Agco Kft.</p>
-          <p>Budapest, Hungary || hybrid</p>
-          <p>2021 - 2023</p>
-          <p>PL/SQL, JavaScript, HTML, CSS</p>
-        </div>
-      </div>
-      <div className="pt-8 md:ml-4 lg:ml-4 xl:ml-4">
+      <div className="ml-0 md:ml-10">
         <div>
           <p className="text-4xl font-bold uppercase pb-4">Languages</p>
         </div>

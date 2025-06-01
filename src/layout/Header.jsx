@@ -17,10 +17,14 @@ const Header = ({ isOpen, setIsOpen }) => {
     },
     {
       id: 3,
-      link: "project",
+      link: "work",
     },
     {
       id: 4,
+      link: "project",
+    },
+    {
+      id: 5,
       link: "contact",
     },
   ];
