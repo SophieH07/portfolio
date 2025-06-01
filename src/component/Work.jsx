@@ -10,7 +10,7 @@ const Work = () => {
             <p className="uppercase font-medium text-xl py-3">Prefixbox</p>
             <p>Technical Account Manager</p>
             <p>Budapest, Hungary || hybrid</p>
-            <p>2024 - 2025</p>
+            <p>2025 - currently</p>
             <p></p>
           </div>
           <div>
