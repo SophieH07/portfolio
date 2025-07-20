@@ -1,8 +1,16 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [theme, setTheme] = useState("dark");
+
+  useEffect(() => {
+    document.body.classList.remove("theme-dark", "theme-light");
+    document.body.classList.add(
+      theme === "dark" ? "theme-dark" : "theme-light"
+    );
+  }, [theme]);
 
   function toggleMenu() {
     setIsOpen(!isOpen);
@@ -17,6 +25,33 @@ const Header = () => {
 
   return (
     <nav className="fixed z-50 flex items-center flex-wrap w-full uppercase justify-end md:justify-center ">
+      {/* Theme slider */}
+      <div className="absolute left-4 top-2 flex items-center gap-2">
+        <span className="text-xs">{theme === "dark" ? "🌙" : "☀️"}</span>
+        <label className="flex items-center cursor-pointer">
+          <input
+            type="checkbox"
+            checked={theme === "light"}
+            onChange={() => setTheme(theme === "dark" ? "light" : "dark")}
+            className="hidden"
+          />
+          <span
+            className="w-10 h-5 flex items-center bg-gray-300 rounded-full p-1"
+            style={{
+              background: theme === "dark" ? "#374554" : "#e34251",
+              transition: "background 0.2s",
+            }}
+          >
+            <span
+              className="bg-white w-4 h-4 rounded-full shadow-md transform duration-200"
+              style={{
+                transform:
+                  theme === "light" ? "translateX(20px)" : "translateX(0)",
+              }}
+            ></span>
+          </span>
+        </label>
+      </div>
       <div className="md:hidden">
         <button
           onClick={toggleMenu}

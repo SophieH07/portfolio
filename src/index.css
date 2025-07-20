@@ -7,10 +7,18 @@
 }
 
 body {
-    background: #222222;
-    /* linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(33,9,121,1) 44%, rgba(29,239,255,1) 100%); */
-    color: white;
+    /* Remove direct background and color, use theme classes instead */
     place-items: center;
+}
+
+body.theme-dark {
+    background: #222222;
+    color: white;
+}
+
+body.theme-light {
+    background: #fff;
+    color: #222;
 }
 
 .section {
@@ -26,8 +34,7 @@ h3 {
 
 /* FLOATING LAPTOP */
 .floating-laptop {
-    border: 6px solid #000;
-    border-radius: 16px;
+
     animation: float 3s ease-in-out infinite;
     transition: transform 0.3s;
     box-sizing: border-box;
