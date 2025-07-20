@@ -4,6 +4,42 @@
 
 #root {
     @apply h-screen w-screen;
+    --primary: #e34251;
+    --secondary: #f0707d;
+}
+
+.text-primary {
+    color: var(--primary);
+}
+.text-secondary {
+    color: var(--secondary);
+}
+
+.text-secondary-hover:hover {
+    color: var(--secondary);
+}
+
+.text-secondary:hover {
+    color: var(--primary);
+}
+
+.bg-primary {
+    background: var(--primary);
+}
+.bg-secondary {
+    background: var(--secondary);
+}
+.border-primary {
+    border-color: var(--primary);
+}
+.border-secondary {
+    border-color: var(--secondary);
+}
+.secondary-bg-hover {
+    background: var(--secondary);
+}
+.secondary-bg-hover:hover {
+    background: var(--primary);
 }
 
 body {
@@ -29,7 +65,7 @@ body.theme-light {
 h3 {
     font-size: x-large;
     text-transform: uppercase;
-    color: #e34251;
+    color: var(--primary);
 }
 
 /* FLOATING LAPTOP */
@@ -48,6 +84,16 @@ h3 {
     0% { transform: rotate(15deg) translateY(0px); }
     50% { transform: rotate(15deg) translateY(-20px); }
     100% { transform: rotate(15deg) translateY(0px); }
+}
+
+body.theme-dark .floating-laptop {
+    border: 6px solid #000;
+    border-radius: 16px;
+}
+
+body.theme-light .floating-laptop {
+    border: 6px solid #fff;
+    border-radius: 16px;
 }
 
 .laptop-container {
@@ -87,3 +133,4 @@ h3 {
     background: #253443;
     cursor: pointer;
 }
+

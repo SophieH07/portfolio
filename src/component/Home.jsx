@@ -39,7 +39,7 @@ const Home = () => {
   }, [typed, isTyping, roleIdx]);
 
   return (
-    <div className="section pt-20 md:pt-40" id="home">
+    <div className="section pt-20 md:pt-60" id="home">
       <div className="grid justify-center items-center">
         <div className="md:flex md:items-center md:gap-8">
           <div className="flex-1 min-w-0">
@@ -51,21 +51,21 @@ const Home = () => {
               I'm a{" "}
               <span
                 style={{
-                  borderRight: "2px solid #93e1d8",
+                  borderRight: "2px solid var(--primary)",
                   paddingRight: "2px",
-                  color: "#93e1d8",
+                  color: "var(--primary)",
                 }}
               >
                 {typed}
               </span>
             </div>
             <div className="inline-flex gap-5 ">
-              <div className="cursor-pointer p-2 bg-[#e34251] border rounded-lg">
+              <div className="cursor-pointer p-2 border rounded-lg secondary-bg-hover">
                 <a href="https://github.com/SophieH07" target="_blank">
                   <img src={github} />{" "}
                 </a>
               </div>
-              <div className="cursor-pointer p-2 bg-[#e34251] border rounded-lg">
+              <div className="cursor-pointer p-2 border rounded-lg secondary-bg-hover">
                 <a
                   href="https://www.linkedin.com/in/zsofiaszaniszlo/"
                   target="_blank"
@@ -77,10 +77,7 @@ const Home = () => {
             <br />
             <div className="inline-flex text-xl">
               <p className="pr-1">Learn more about </p>
-              <Link
-                to="/about"
-                className="hover:text-[#e34251]  text-[#f0707d]"
-              >
+              <Link to="/about" className="text-secondary">
                 about me
               </Link>
             </div>
