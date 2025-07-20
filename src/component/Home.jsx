@@ -21,8 +21,8 @@ const Home = () => {
           </div>
         </div>
         <div>
-          <div className="cursor-default gap-0 uppercase font-medium text-center bg-black bg-opacity-10 max-w-sm">
-            <img src={laptop} alt="" />
+          <div className="max-w-sm">
+            <img src={laptop} alt="Picture of a laptop" />
           </div>
         </div>
       </div>
