@@ -36,7 +36,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="section" id="contact">
+    <div id="contact">
       <div className="text-4xl font-bold uppercase pb-4">Contact Me</div>
       <div className={`${emailSent ? "" : "hidden"}`}>
         Thank you for your message!

@@ -5,7 +5,7 @@ import laptop from "../pics/watersplashlaptopotherside.jpg";
 
 const Home = () => {
   return (
-    <div className="section">
+    <div id="home">
       <div className="grid grid-flow-col grid-cols-2 justify-center items-center">
         <div>
           <div>

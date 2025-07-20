@@ -72,8 +72,7 @@ const Project = () => {
   }
 
   return (
-    <div className="section" id="project">
-      {/*if more projects, add: mb-20 mt-4 */}
+    <div id="project">
       <h2 className="text-4xl font-bold uppercase sm:pb-9 pt-4">Projects</h2>
       <div
         className={`fixed top-0 left-0 z-90 w-screen h-screen bg-black/70 flex justify-center items-center ${
