@@ -41,50 +41,50 @@ const Contact = () => {
       <div className={`${emailSent ? "" : "hidden"}`}>
         Thank you for your message!
       </div>
-      <div className="uppercase grid w-3/4 lg:w-2/4 xl:w-2/4 pt-3 bg-gray-600 bg-opacity-20 p-5 rounded-md shadow-sm space-y-4 mb-4">
+      <div className="uppercase grid w-3/4 lg:w-2/4 xl:w-2/4 pt-3 bg-[#e34251] bg-opacity-20 p-5 rounded-md shadow-sm space-y-4 mb-4">
         <form ref={form} onSubmit={sendEmail}>
           <div>
-            <label className="block font-medium pb-2 text-sm text-gray-300 rounded-lg">
+            <label className="block font-medium pb-2 text-sm rounded-lg">
               Your email
             </label>
             <input
               type="email"
               id="email"
               name="email"
-              className="block w-full p-3 bg-white bg-opacity-10 border-gray-600 placeholder-gray-400 text-white focus:border-primary-500 shadow-sm-light rounded-lg"
+              className="block w-full p-3 bg-white bg-opacity-70 border-gray-600 placeholder-gray-400 text-white focus:border-primary-500 shadow-sm-light rounded-lg"
               placeholder="name@email.com"
               required
             />
           </div>
           <div>
-            <label className="block py-2 text-sm font-medium  text-gray-300 rounded-lg">
+            <label className="block py-2 text-sm font-medium   rounded-lg">
               subject
             </label>
             <input
               type="text"
               id="subject"
               name="subject"
-              className="block w-full p-3 bg-white bg-opacity-10 border-gray-600 placeholder-gray-400 text-white focus:border-primary-500 shadow-sm-light rounded-lg"
+              className="block w-full p-3 bg-white bg-opacity-70 border-gray-600 placeholder-gray-400 text-white focus:border-primary-500 shadow-sm-light rounded-lg"
               placeholder="subject"
               required
             />
           </div>
           <div className="sm:col-span-2 pb-2">
-            <label className="block py-2 text-sm font-medium text-gray-300 rounded-lg">
+            <label className="block py-2 text-sm font-medium  rounded-lg">
               message
             </label>
             <textarea
               id="message"
               rows="8"
               name="message"
-              className="block w-full p-3 text-sm bg-white bg-opacity-10 border-gray-600 placeholder-gray-400 text-white focus:border-primary-500 shadow-sm-light rounded-lg"
+              className="block w-full p-3 text-sm bg-white bg-opacity-70 border-gray-600 placeholder-gray-400 text-white focus:border-primary-500 shadow-sm-light rounded-lg"
               placeholder="Ask for my resume..."
               required
             ></textarea>
           </div>
           <button
             type="submit"
-            className="p-3 text-sm font-medium text-center text-white bg-purple-900 bg-opacity-30 rounded-lg sm:w-fit bg-primary-600 hover:bg-opacity-60 focus:ring-primary-800"
+            className="p-3 text-sm font-medium text-center bg-[#93e1d8] rounded-lg sm:w-fit bg-primary-600 hover:bg-opacity-60 focus:ring-primary-800"
           >
             Send message
           </button>
