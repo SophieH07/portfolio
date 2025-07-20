@@ -4,20 +4,33 @@
 
 section {
     display: grid;
-	place-items: center;
-	min-height: 90vh;
-    padding-top: 4em;
+    padding-left: 52px;
+    padding-right: 52px;
+    /* place-items: center; */
+	/* min-height: 90vh; */
+    /* padding-top: 4em; */
 }
 
 body {
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(33,9,121,1) 44%, rgba(29,239,255,1) 100%);
-    color: white;
+    background: white;
+    /* linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(33,9,121,1) 44%, rgba(29,239,255,1) 100%); */
+    color: black;
 }
 
 #home {
     place-items: center;
-    height: 90vh;
     padding-top: 4em;
+}
+
+#contact {
+    place-items: center;
+    padding: 0;
+}
+
+h3 {
+    font-size: x-large;
+    text-transform: uppercase;
+    color: #e34251;
 }
 
 /* SCROLLBAR */

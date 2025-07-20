@@ -17,24 +17,20 @@ const Header = ({ isOpen, setIsOpen }) => {
     },
     {
       id: 3,
-      link: "work",
-    },
-    {
-      id: 4,
       link: "project",
     },
     {
-      id: 5,
+      id: 4,
       link: "contact",
     },
   ];
 
   return (
-    <nav className="fixed z-50 flex items-center flex-wrap w-full uppercase justify-end bg-slate-900 bg-opacity-60 ">
+    <nav className="fixed z-50 flex items-center flex-wrap w-full uppercase justify-center bg-white">
       <div className="md:hidden">
         <button
           onClick={toggleMenu}
-          className="px-2 py-2 rounded text-white hover:bg-slate-400 hover:bg-opacity-20"
+          className="px-2 py-2 rounded hover:bg-slate-400"
         >
           <svg
             className="fill-current h-8 w-8"
@@ -54,7 +50,7 @@ const Header = ({ isOpen, setIsOpen }) => {
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="block text-center p-2 lg:p-4 font-medium cursor-pointer text-gray-200 hover:text-white duration-200"
+            className="block text-center p-2 lg:p-4 font-medium cursor-pointer hover:text-cyan-700 duration-200"
           >
             <Link
               activeClass="active"
