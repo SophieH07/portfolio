@@ -87,10 +87,10 @@ const Project = () => {
         />
       </div>
       {/* max-h-[70vh] max-w-[97%] overflow-y-scroll  */}
-      <div className="gap-4 grid grid-flow-row sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 px-8 text-gray-300 pb-7">
+      <div className="gap-4 grid grid-flow-row sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 px-8 pb-7">
         {projects.map((project) => (
           <div key={project.id}>
-            <div className="rounded shadow-lg shadow-gray-900 bg-black bg-opacity-40 hover:shadow-gray-600 text-center">
+            <div className="rounded shadow-lg shadow-gray-900 bg-[#e34251] bg-opacity-40 hover:shadow-gray-600 text-center">
               <p className="font-medium uppercase py-1">{project.title}</p>
               <img
                 src={project.picture}
