@@ -16,7 +16,7 @@ const Header = () => {
   ];
 
   return (
-    <nav className="fixed z-50 flex items-center flex-wrap w-full uppercase justify-end md:justify-center bg-white">
+    <nav className="fixed z-50 flex items-center flex-wrap w-full uppercase justify-end md:justify-center ">
       <div className="md:hidden">
         <button
           onClick={toggleMenu}
@@ -40,13 +40,13 @@ const Header = () => {
         {links.map(({ id, link, label }) => (
           <li
             key={id}
-            className="block text-center p-2 lg:p-4 font-medium text-lg cursor-pointer hover:text-cyan-700 duration-200"
+            className="block text-center p-2 lg:p-4 font-medium text-lg cursor-pointer hover:text-[#93e1d8] duration-200"
           >
             <NavLink
               to={link}
               onClick={() => setIsOpen(false)}
               className={({ isActive }) =>
-                isActive ? "underline underline-offset-4 text-cyan-700" : ""
+                isActive ? "underline underline-offset-4 text-[#93e1d8]" : ""
               }
               end={link === "/"}
             >

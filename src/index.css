@@ -7,9 +7,9 @@
 }
 
 body {
-    background: white;
+    background: #222222;
     /* linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(33,9,121,1) 44%, rgba(29,239,255,1) 100%); */
-    color: black;
+    color: white;
     place-items: center;
 }
 
@@ -42,16 +42,12 @@ h3 {
     50% { transform: rotate(15deg) translateY(-20px); }
     100% { transform: rotate(15deg) translateY(0px); }
 }
-.floating-laptop:hover, .floating-laptop:focus {
-    animation-play-state: paused;
-    transform: rotate(15deg) scale(1.1);
-    z-index: 10;
-}
+
 .laptop-container {
     max-width: 380px;
     min-width: 220px;
     width: 100%;
-    margin-left: 2rem;
+    margin-left: 5rem;
     margin-right: 0;
     padding: 24px 12px;
     overflow: visible;
