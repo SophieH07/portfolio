@@ -58,14 +58,12 @@ const About = () => {
     },
   ];
   return (
-    <section id="about">
+    <div className="section" id="about">
       <h2 className="text-4xl font-bold uppercase sm:pb-9">About</h2>
       <h3>Skills</h3>
-      <div className="flex flex-wrap cursor-default gap-2 uppercase font-normal text-center bg-[#93e1d8]">
+      <div className="flex flex-wrap cursor-default gap-4 uppercase font-normal bg-[#93e1d8] p-2">
         {skillSet.map(({ id, skill }) => (
-          <div key={id} className="p-3">
-            {skill}
-          </div>
+          <p key={id}>{skill}</p>
         ))}
       </div>
 
@@ -159,7 +157,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

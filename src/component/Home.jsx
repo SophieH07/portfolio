@@ -4,19 +4,16 @@ import laptop from "../pics/watersplashlaptopotherside.jpg";
 
 const Home = () => {
   return (
-    <section
-      id="home"
-      className="grid grid-flow-col grid-cols-2 justify-center items-center"
-    >
+    <div className="section grid grid-flow-col grid-cols-2 justify-center items-center">
       <div>
         <div>
-          <div className="text-xl lg:pt-20 pb-10 lg:text-6xl md:text-5xl font-bold">
+          <div className="text-xl lg:pt-14 pb-8 lg:text-6xl md:text-5xl font-bold">
             Welcome!
           </div>
-          <div className="lg:py-6 lg:text-4xl md:text-xl text-lg">
+          <div className="lg:py-4 lg:text-3xl md:text-xl text-lg">
             My name is Zsófia Szaniszló
           </div>
-          <div className="lg:py-8 lg:text-4xl md:text-xl text-lg">
+          <div className="lg:py-4 lg:text-3xl md:text-xl text-lg">
             I'm a Software Developer from Hungary
           </div>
           <div className="inline-flex pt-2">
@@ -41,7 +38,7 @@ const Home = () => {
           <img src={laptop} alt="" />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -2,11 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-section {
-    display: grid;
+.section {
+    padding-top: 52px;
+    /* display: grid; */
     padding-left: 52px;
     padding-right: 52px;
-    /* place-items: center; */
+    place-items: center;
 	/* min-height: 90vh; */
     /* padding-top: 4em; */
 }

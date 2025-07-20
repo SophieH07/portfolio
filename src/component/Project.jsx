@@ -72,7 +72,7 @@ const Project = () => {
   }
 
   return (
-    <section id="project">
+    <div className="section" id="project">
       {/*if more projects, add: mb-20 mt-4 */}
       <h2 className="text-4xl font-bold uppercase sm:pb-9 pt-4">Projects</h2>
       <div
@@ -129,7 +129,7 @@ const Project = () => {
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 

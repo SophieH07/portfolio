@@ -1,28 +1,18 @@
-import React, { useState } from "react";
-import { Link } from "react-scroll";
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
-const Header = ({ isOpen, setIsOpen }) => {
+const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   function toggleMenu() {
     setIsOpen(!isOpen);
   }
 
   const links = [
-    {
-      id: 1,
-      link: "home",
-    },
-    {
-      id: 2,
-      link: "about",
-    },
-    {
-      id: 3,
-      link: "project",
-    },
-    {
-      id: 4,
-      link: "contact",
-    },
+    { id: 1, link: "/", label: "home" },
+    { id: 2, link: "/about", label: "about" },
+    { id: 3, link: "/projects", label: "projects" },
+    { id: 4, link: "/contact", label: "contact" },
   ];
 
   return (
@@ -47,20 +37,21 @@ const Header = ({ isOpen, setIsOpen }) => {
           isOpen ? "" : "hidden"
         }`}
       >
-        {links.map(({ id, link }) => (
+        {links.map(({ id, link, label }) => (
           <li
             key={id}
             className="block text-center p-2 lg:p-4 font-medium cursor-pointer hover:text-cyan-700 duration-200"
           >
-            <Link
-              activeClass="active"
-              smooth
-              spy
+            <NavLink
               to={link}
               onClick={() => setIsOpen(false)}
+              className={({ isActive }) =>
+                isActive ? "underline underline-offset-4 text-cyan-700" : ""
+              }
+              end={link === "/"}
             >
-              {link}
-            </Link>
+              {label}
+            </NavLink>
           </li>
         ))}
       </ul>
