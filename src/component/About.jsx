@@ -58,7 +58,7 @@ const About = () => {
     },
   ];
   return (
-    <div id="about">
+    <div className="section" id="about">
       <h2 className="text-4xl font-bold uppercase sm:pb-9">About</h2>
       <h3>Skills</h3>
       <div className="flex flex-wrap cursor-default gap-4 uppercase font-normal bg-[#93e1d8] p-2">

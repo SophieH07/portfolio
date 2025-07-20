@@ -5,22 +5,20 @@ import laptop from "../pics/watersplashlaptopotherside.jpg";
 
 const Home = () => {
   return (
-    <div id="home">
-      <div className="grid grid-flow-col grid-cols-2 justify-center items-center">
-        <div>
+    <div className="section" id="home">
+      <div className="grid justify-center items-center">
+        <div className="md:flex">
           <div>
-            <div className="text-xl lg:pt-14 pb-8 lg:text-6xl md:text-5xl font-bold">
+            <div className="text-xl md:pt-14 pb-8 md:text-4xl lg:text-6xl font-bold">
               Welcome!
             </div>
-            <div className="lg:py-4 lg:text-3xl md:text-xl text-lg">
+            <div className="md:py-4 lg:text-3xl md:text-xl text-lg">
               My name is Zsófia Szaniszló
             </div>
-            <div className="lg:py-4 lg:text-3xl md:text-xl text-lg">
+            <div className="md:py-4 lg:text-3xl md:text-xl text-lg">
               I'm a Software Developer from Hungary
             </div>
           </div>
-        </div>
-        <div>
           <div className="max-w-sm">
             <img src={laptop} alt="Picture of a laptop" />
           </div>

@@ -36,12 +36,11 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact">
-      <div className="text-4xl font-bold uppercase pb-4">Contact Me</div>
+    <div className="section" id="contact">
+      <h2 className="text-4xl font-bold uppercase pb-4">Contact Me</h2>
       <div className={`${emailSent ? "" : "hidden"}`}>
         Thank you for your message!
       </div>
-
       <div className="uppercase grid w-3/4 lg:w-2/4 xl:w-2/4 pt-3 bg-gray-600 bg-opacity-20 p-5 rounded-md shadow-sm space-y-4 mb-4">
         <form ref={form} onSubmit={sendEmail}>
           <div>

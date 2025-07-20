@@ -16,7 +16,7 @@ const Header = () => {
   ];
 
   return (
-    <nav className="sticky z-50 flex items-center flex-wrap w-full uppercase justify-center bg-white">
+    <nav className="fixed z-50 flex items-center flex-wrap w-full uppercase justify-end md:justify-center bg-white">
       <div className="md:hidden">
         <button
           onClick={toggleMenu}
