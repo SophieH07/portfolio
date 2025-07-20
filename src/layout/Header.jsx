@@ -1,15 +1,27 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
+const getInitialTheme = () => {
+  try {
+    const stored = window.localStorage.getItem("theme");
+    return stored === "light" ? "light" : "dark";
+  } catch {
+    return "dark";
+  }
+};
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState(getInitialTheme);
 
   useEffect(() => {
-    document.body.classList.remove("theme-dark", "theme-light");
-    document.body.classList.add(
-      theme === "dark" ? "theme-dark" : "theme-light"
-    );
+    try {
+      document.body.classList.remove("theme-dark", "theme-light");
+      document.body.classList.add(
+        theme === "dark" ? "theme-dark" : "theme-light"
+      );
+      window.localStorage.setItem("theme", theme);
+    } catch {}
   }, [theme]);
 
   function toggleMenu() {
