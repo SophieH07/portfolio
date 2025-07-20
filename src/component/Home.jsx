@@ -59,6 +59,31 @@ const Home = () => {
                 {typed}
               </span>
             </div>
+            <div className="inline-flex gap-5 ">
+              <div className="cursor-pointer p-2 bg-[#e34251] border rounded-lg">
+                <a href="https://github.com/SophieH07" target="_blank">
+                  <img src={github} />{" "}
+                </a>
+              </div>
+              <div className="cursor-pointer p-2 bg-[#e34251] border rounded-lg">
+                <a
+                  href="https://www.linkedin.com/in/zsofiaszaniszlo/"
+                  target="_blank"
+                >
+                  <img src={linkedin} />
+                </a>
+              </div>
+            </div>
+            <br />
+            <div className="inline-flex text-xl">
+              <p className="pr-1">Learn more about </p>
+              <Link
+                to="/about"
+                className="hover:text-[#e34251]  text-[#f0707d]"
+              >
+                about me
+              </Link>
+            </div>
           </div>
           <div className="laptop-container">
             <img
@@ -68,28 +93,6 @@ const Home = () => {
               tabIndex={0}
             />
           </div>
-        </div>
-      </div>
-      <div className="flex gap-4 mt-16">
-        <div className="inline-flex p-3 bg-black text-[#e34251] border rounded-lg">
-          <div className="cursor-pointer pr-3">
-            <a href="https://github.com/SophieH07" target="_blank">
-              <img src={github} />{" "}
-            </a>
-          </div>
-          <div className="cursor-pointer">
-            <a
-              href="https://www.linkedin.com/in/zsofiaszaniszlo/"
-              target="_blank"
-            >
-              <img src={linkedin} />
-            </a>
-          </div>
-        </div>
-        <div>
-          <button className="bg-black text-[#e34251] p-4 text-4xl border rounded-lg">
-            <Link to="/about">About me</Link>
-          </button>
         </div>
       </div>
     </div>
