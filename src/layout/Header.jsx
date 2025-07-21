@@ -1,18 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState, useContext, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-
-const getInitialTheme = () => {
-  try {
-    const stored = window.localStorage.getItem("theme");
-    return stored === "light" ? "light" : "dark";
-  } catch {
-    return "dark";
-  }
-};
+import { ThemeContext } from "../ThemeContext"; // import context
 
 const Header = () => {
+  const [theme, setTheme] = useContext(ThemeContext); // use context
   const [isOpen, setIsOpen] = useState(false);
-  const [theme, setTheme] = useState(getInitialTheme);
 
   useEffect(() => {
     try {

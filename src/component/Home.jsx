@@ -39,7 +39,7 @@ const Home = () => {
   }, [typed, isTyping, roleIdx]);
 
   return (
-    <div className="section pt-20 md:pt-60" id="home">
+    <div className="section pt-20 md:pt-52" id="home">
       <div className="grid justify-center items-center">
         <div className="md:flex md:items-center md:gap-8">
           <div className="flex-1 min-w-0">
@@ -49,37 +49,45 @@ const Home = () => {
             </div>
             <div className="md:py-4 lg:text-3xl md:text-xl text-lg">
               I'm a{" "}
-              <span
-                style={{
-                  borderRight: "2px solid var(--primary)",
-                  paddingRight: "2px",
-                  color: "var(--primary)",
-                }}
-              >
+              <span className="text-primary border-r-2 border-primary pr-1">
                 {typed}
               </span>
             </div>
-            <div className="inline-flex gap-5 ">
-              <div className="cursor-pointer p-2 border rounded-lg secondary-bg-hover">
-                <a href="https://github.com/SophieH07" target="_blank">
-                  <img src={github} />{" "}
+            <div className="inline-flex gap-5 mt-4">
+              <div className="cursor-pointer p-2 bg-secondary rounded-lg bg-secondary-hover">
+                <a
+                  href="https://github.com/SophieH07"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={github} />
                 </a>
               </div>
-              <div className="cursor-pointer p-2 border rounded-lg secondary-bg-hover">
+              <div className="cursor-pointer p-2 bg-secondary rounded-lg bg-secondary-hover">
                 <a
                   href="https://www.linkedin.com/in/zsofiaszaniszlo/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <img src={linkedin} />
                 </a>
               </div>
             </div>
             <br />
-            <div className="inline-flex text-xl">
+            <div className="inline-flex text-xl pt-3">
               <p className="pr-1">Learn more about </p>
-              <Link to="/about" className="text-secondary">
+              <Link to="/about" className="text-primary text-secondary-hover">
                 about me
               </Link>
+            </div>
+            <div className="mt-3">
+              <a
+                href="/documents/resume.pdf"
+                download
+                className="inline-block text-white text-lg mt-4 px-4 py-2 bg-secondary rounded bg-secondary-hover"
+              >
+                Download resume
+              </a>
             </div>
           </div>
           <div className="laptop-container">

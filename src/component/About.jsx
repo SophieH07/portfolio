@@ -57,6 +57,54 @@ const About = () => {
       skill: "Python",
     },
   ];
+  // Timeline data for jobs and education
+  const workExperience = [
+    {
+      company: "Prefixbox",
+      role: "Technical Account Manager",
+      location: "Budapest, Hungary || hybrid",
+      period: "2025 - currently",
+      tech: "",
+    },
+    {
+      company: "Dialogue Creatives",
+      role: "Frontend Developer",
+      location: "Budapest, Hungary || hybrid",
+      period: "2024 - 2025",
+      tech: "",
+    },
+    {
+      company:
+        "Nyelvtudományi Kutatóközpont\nHungarian Research Centre for Linguistics",
+      role: "Software Developer",
+      location: "Budapest, Hungary || remote",
+      period: "2023 - 2025",
+      tech: "PostgreSQL, Docker, Tailwind CSS, Next.js, Svelte",
+    },
+    {
+      company: "Agco Kft.",
+      role: "Software Developer",
+      location: "Budapest, Hungary || hybrid",
+      period: "2021 - 2023",
+      tech: "PL/SQL, JavaScript, HTML, CSS",
+    },
+  ];
+
+  const education = [
+    {
+      school: "IU University of Applied Sciences",
+      degree: "Bachelor's degree in Computer Science",
+      location: "Located in Germany, taking classes online",
+      period: "2023 - ongoing",
+    },
+    {
+      school: "Codecool",
+      degree: "Junior Full-Stack Software Developer",
+      location: "Budapest, Hungary",
+      period: "2019 - 2020",
+    },
+  ];
+
   return (
     <div className="section" id="about">
       <h2 className="text-4xl font-bold uppercase sm:pb-9">About</h2>
@@ -67,71 +115,61 @@ const About = () => {
         ))}
       </div>
 
-      <div>
-        <div>
-          <h3>Work Experience</h3>
+      {/* Timeline Section */}
+      <div className="flex flex-col md:flex-row justify-between mt-12">
+        {/* Work Experience Timeline */}
+        <div className="w-full md:w-1/2 pr-4">
+          <h3 className="mb-6 font-bold text-2xl">Work Experience</h3>
+          <div className="relative ml-6">
+            {/* Vertical line */}
+            <div className="absolute left-0 top-0 h-full w-1 bg-gray-300 rounded"></div>
+            {workExperience.map((job, idx) => (
+              <div key={idx} className="mb-12 flex items-start relative">
+                {/* Timeline dot */}
+                <div className="absolute -left-3.5 top-2 w-4 h-4 bg-[#93e1d8] border-2 border-white rounded-full z-10"></div>
+                <div className="pl-6">
+                  <p className="uppercase font-medium text-xl py-1 whitespace-pre-line">
+                    {job.company}
+                  </p>
+                  <p>{job.role}</p>
+                  <p className="text-sm text-gray-500">{job.location}</p>
+                  <p className="text-sm text-gray-400">{job.period}</p>
+                  {job.tech && (
+                    <p className="text-sm text-gray-600">{job.tech}</p>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="flex justify-between">
-          <div>
-            <p className="uppercase font-medium text-xl py-3">Prefixbox</p>
-            <p>Technical Account Manager</p>
-            <p>Budapest, Hungary || hybrid</p>
-            <p>2025 - currently</p>
-            <p></p>
-          </div>
-          <div>
-            <p className="uppercase font-medium text-xl py-3">
-              Dialogue Creatives
-            </p>
-            <p>Frontend Developer</p>
-            <p>Budapest, Hungary || hybrid</p>
-            <p>2024 - 2025</p>
-            <p></p>
-          </div>
-          <div>
-            <p className="uppercase font-medium text-xl py-3">
-              Nyelvtudományi Kutatóközpont
-              <br />
-              Hungarian Research Centre for Linguistics
-            </p>
-            <p>Software Developer</p>
-            <p>Budapest, Hungary || remote</p>
-            <p>2023 - 2025</p>
-            <p>PostgreSQL, Docker, Tailwind CSS, Next.js, Svelte</p>
-          </div>
-          <div>
-            <p className="uppercase font-medium text-xl py-3">Agco Kft.</p>
-            <p>Software Developer</p>
-            <p>Budapest, Hungary || hybrid</p>
-            <p>2021 - 2023</p>
-            <p>PL/SQL, JavaScript, HTML, CSS</p>
+        {/* Education Timeline */}
+        <div className="w-full md:w-1/2 pl-4 mt-12 md:mt-0">
+          <h3 className="mb-6 font-bold text-2xl">Education</h3>
+          <div className="relative ml-6">
+            {/* Vertical line */}
+            <div className="absolute left-0 top-0 h-full w-1 bg-gray-300 rounded"></div>
+            {education.map((edu, idx) => (
+              <div key={idx} className="mb-12 flex items-start relative">
+                {/* Timeline dot */}
+                <div className="absolute -left-3.5 top-2 w-4 h-4 bg-[#93e1d8] border-2 border-white rounded-full z-10"></div>
+                <div className="pl-6">
+                  <p className="uppercase font-medium text-xl py-1">
+                    {edu.school}
+                  </p>
+                  <p>{edu.degree}</p>
+                  <p className="text-sm text-gray-500">{edu.location}</p>
+                  <p className="text-sm text-gray-400">{edu.period}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
-      <div className="flex justify-between">
-        <div className="">
-          <div>
-            <h3>Education</h3>
-          </div>
-          <div>
-            <p className="uppercase font-medium text-xl py-3">
-              IU University of Applied Sciences
-            </p>
-            <p>Bachelor's degree in Computer Science</p>
-            <p>Located in Germany, taking classes online</p>
-            <p>2023 - ongoing</p>
-          </div>
-          <div>
-            <p className="uppercase font-medium text-xl py-3">Codecool</p>
-            <p>Junior Full-Stack Software Developer</p>
-            <p>Budapest, Hungary</p>
-            <p>2019 - 2020</p>
-          </div>
-        </div>
-        <div>
-          <div>
-            <h3>Languages</h3>
-          </div>
+
+      {/* Languages and Certificates */}
+      <div className="flex flex-col md:flex-row justify-between mt-12">
+        <div className="w-full md:w-1/2 pr-4">
+          <h3>Languages</h3>
           <div>
             <p className="uppercase font-medium text-xl py-3">Hungarian</p>
             <p>Mother Tongue</p>
@@ -141,10 +179,8 @@ const About = () => {
             <p>C1 Advanced</p>
           </div>
         </div>
-        <div>
-          <div>
-            <h3>Certificates</h3>
-          </div>
+        <div className="w-full md:w-1/2 pl-4 mt-12 md:mt-0">
+          <h3>Certificates</h3>
           <div>
             <p className="uppercase font-medium text-xl py-3">Generative AI</p>
             <p>Mother Tongue</p>

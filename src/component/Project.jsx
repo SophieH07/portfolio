@@ -4,6 +4,7 @@ import Tatatarot2 from "../project_pictures/tatatarot.v.2.png";
 import DemoNytud from "../project_pictures/demotest.png";
 import BookCatalogue from "../project_pictures/book_catalogue.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Project = () => {
   const [imageHidden, setImageHidden] = useState(true);
@@ -11,6 +12,7 @@ const Project = () => {
   const projects = [
     {
       id: 1,
+      slug: "tatatarot-v1",
       picture: Tatatarot,
       title: "Tatatarot",
       description:
@@ -21,6 +23,7 @@ const Project = () => {
     },
     {
       id: 2,
+      slug: "tatatarot-v2",
       picture: Tatatarot2,
       title: "Tatatarot",
       description:
@@ -31,6 +34,7 @@ const Project = () => {
     },
     {
       id: 3,
+      slug: "prompt-collector",
       picture: PromptCollector,
       title: "Prompt collector",
       description:
@@ -41,6 +45,7 @@ const Project = () => {
     },
     {
       id: 4,
+      slug: "nytk-demo",
       picture: DemoNytud,
       title: "NYTK Demo",
       description:
@@ -51,6 +56,7 @@ const Project = () => {
     },
     {
       id: 5,
+      slug: "book-catalogue",
       picture: BookCatalogue,
       title: "Book Catalogue",
       description:
@@ -91,11 +97,13 @@ const Project = () => {
           <div key={project.id}>
             <div className="rounded shadow-lg shadow-gray-900 bg-[#e34251] bg-opacity-40 hover:shadow-gray-600 text-center">
               <p className="font-medium uppercase py-1">{project.title}</p>
-              <img
-                src={project.picture}
-                className="rounded-t h-50 w-full object-cover cursor-pointer"
-                onClick={(e) => showImage(e.target.src)}
-              />
+              <Link to={`/project/${project.slug}`}>
+                <img
+                  src={project.picture}
+                  className="rounded-t h-50 w-full object-cover cursor-pointer"
+                  alt={project.title}
+                />
+              </Link>
               <p className="text-sm mb-4 px-2 text-justify">
                 {project.description}
               </p>

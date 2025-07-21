@@ -2,10 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-#root {
-    @apply h-screen w-screen;
+:root {
     --primary: #e34251;
     --secondary: #f0707d;
+    --backgroundlight: #fff;
+    --backgrounddark: #1a202c;
+}
+
+#root {
+    @apply h-screen w-screen;
+}
+
+body.theme-dark {
+    --primary:#F6C1C6 ;
+    --secondary: #f0707d;
+    background: var(--backgrounddark);
+    color: white;
+    nav {
+        background: var(--backgrounddark);
+    }
+}
+
+body.theme-light {
+    --primary: #8A001C;
+    --secondary: #B50024;
+    background: var(--backgroundlight);
+    color: black;
+    nav {
+        background: var(--backgroundlight);
+    
+    }
 }
 
 .text-primary {
@@ -35,26 +61,9 @@
 .border-secondary {
     border-color: var(--secondary);
 }
-.secondary-bg-hover {
-    background: var(--secondary);
-}
-.secondary-bg-hover:hover {
-    background: var(--primary);
-}
 
-body {
-    /* Remove direct background and color, use theme classes instead */
-    place-items: center;
-}
-
-body.theme-dark {
-    background: #222222;
-    color: white;
-}
-
-body.theme-light {
-    background: #fff;
-    color: #222;
+.bg-secondary-hover:hover {
+    background:#ee5968;
 }
 
 .section {
@@ -65,7 +74,6 @@ body.theme-light {
 h3 {
     font-size: x-large;
     text-transform: uppercase;
-    color: var(--primary);
 }
 
 /* FLOATING LAPTOP */
@@ -86,13 +94,12 @@ h3 {
     100% { transform: rotate(15deg) translateY(0px); }
 }
 
-body.theme-dark .floating-laptop {
-    border: 6px solid #000;
+.floating-laptop {
+    border: 6px solid #fff;
     border-radius: 16px;
 }
-
-body.theme-light .floating-laptop {
-    border: 6px solid #fff;
+.dark .floating-laptop {
+    border: 6px solid #1a202c;
     border-radius: 16px;
 }
 
@@ -132,5 +139,74 @@ body.theme-light .floating-laptop {
 ::-webkit-scrollbar-thumb:hover { 
     background: #253443;
     cursor: pointer;
+}
+
+    @keyframes float {
+    0% { transform: rotate(15deg) translateY(0px); }
+    50% { transform: rotate(15deg) translateY(-20px); }
+    100% { transform: rotate(15deg) translateY(0px); }
+}
+
+body.theme-dark .floating-laptop {
+    border: 6px solid var(--backgrounddark);
+    border-radius: 16px;
+}
+
+body.theme-light .floating-laptop {
+    border: 6px solid var(--backgroundlight);
+    border-radius: 16px;
+}
+
+.laptop-container {
+    max-width: 380px;
+    min-width: 220px;
+    width: 100%;
+    margin-left: 5rem;
+    margin-right: 0;
+    padding: 24px 12px;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .laptop-container {
+        margin-left: 0;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+        padding: 30px;
+    }
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar { 
+    width: 10px; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb { 
+    background: #374554;
+} 
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover { 
+    background: #253443;
+    cursor: pointer;
+}
+
+@layer utilities {
+    .bg-backgroundlight {
+        background-color: var(--backgroundlight);
+    }
+    .bg-backgrounddark {
+        background-color: var(--backgrounddark);
+    }
+    .text-backgroundlight {
+        color: var(--backgroundlight);
+    }
+    .text-backgrounddark {
+        color: var(--backgrounddark);
+    }
 }
 
