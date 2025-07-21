@@ -95,7 +95,7 @@ const Project = () => {
         {projects.map((project, i) => (
           <div
             key={project.name}
-            className="animate-flip-down w-2/3 md:w-[45%] lg:w-[30%]"
+            className="animate-flip-down flex items-center md:w-[45%] lg:w-[30%]"
           >
             <div className="relative inline-flex justify-center text-center uppercase font-bold m-3 transition duration-300 ease-in-out hover:scale-105 w-full">
               <Link to={`/project/${project.slug}`} className="block w-full">

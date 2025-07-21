@@ -106,7 +106,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center w-full font-medium text-slate-600 py-2 text-sm">
+      <div className="flex justify-center w-[95vw] font-medium text-slate-600 py-2 text-sm">
         <div className="px-2">Made with: Vite, React, Tailwind CSS</div>{" "}
         <div>
           You can find the code of this portfolio{" "}

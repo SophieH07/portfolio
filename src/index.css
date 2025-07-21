@@ -10,8 +10,13 @@
 }
 
 #root {
-    @apply h-screen w-screen;
+    @apply h-full w-full overflow-x-hidden;
 }
+
+html, body {
+    @apply overflow-x-hidden;
+}
+
 
 body.theme-dark {
     --primary:#F6C1C6 ;
@@ -166,7 +171,7 @@ body.theme-light .floating-laptop {
 .laptop-container {
     max-width: 380px;
     min-width: 220px;
-    width: 100%;
+    width: 90vw;
     margin-left: 5rem;
     margin-right: 0;
     padding: 24px 12px;
