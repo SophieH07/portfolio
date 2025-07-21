@@ -66,7 +66,7 @@ const ProjectDetail = () => {
     return (
       <div className="section p-8">
         <h2 className="text-2xl font-bold">Project not found</h2>
-        <Link to="/project" className="underline">
+        <Link to="/projects" className="underline">
           Back to Projects
         </Link>
       </div>
@@ -75,7 +75,7 @@ const ProjectDetail = () => {
 
   return (
     <div className="section p-8">
-      <Link to="/project" className="underline mb-4 inline-block">
+      <Link to="/projects" className="underline mb-4 inline-block">
         ← Back to Projects
       </Link>
       <h2 className="text-4xl font-bold uppercase mb-4">{project.title}</h2>

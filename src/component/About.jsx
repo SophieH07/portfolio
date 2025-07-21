@@ -110,18 +110,24 @@ const About = () => {
 
   return (
     <div className="section" id="about">
-      <h2 className="text-4xl font-bold uppercase sm:pb-9">About</h2>
-      {/* <h3>Skills</h3>
-      <div className="flex flex-wrap cursor-default gap-4 uppercase font-normal bg-[#93e1d8] p-2">
-        {skillSet.map(({ id, skill }) => (
-          <p key={id}>{skill}</p>
-        ))}
-      </div> */}
+      <div className="flex text-center items-center justify-center gap-10 w-[60vw] mt-10">
+        <h3>Skills</h3>
+        <div className="flex flex-wrap cursor-default gap-6 uppercase font-normal p-2">
+          {skillSet.map(({ id, skill }) => (
+            <div class="relative group">
+              <div class="absolute -inset-1 bg-gradient-to-r from-rose-300 to-rose-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+              <div class="skill relative px-3 py-4 bg-white  ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6">
+                <p key={id}>{skill}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
       {/* WORK EXPERIENCE */}
       <div className="flex flex-col md:flex-row w-[90vw] md:w-[60vw] justify-between mt-12">
         <div className="md:w-1/2">
           <div>
-            <h3 className="mb-6 font-bold text-2xl">Work Experience</h3>
+            <h3>Work Experience</h3>
           </div>
           <div className="rb-container">
             <ul className="rb">
@@ -147,7 +153,7 @@ const About = () => {
       {/* EDUCATION */}
       <div className="w-[90vw] md:w-[50vw] flex flex-col md:flex-row justify-end">
         <div>
-          <h3 className="font-bold text-2xl text-right mb-4">Education</h3>
+          <h3 className="text-right">Education</h3>
           <div className="rb-container-reverse">
             <ul className="rb">
               {education.map((edu, idx) => (
@@ -172,7 +178,7 @@ const About = () => {
 
       {/* LANGUAGES AND CERTIFICATES */}
       <div className="rb-container w-[90vw] md:w-[50vw]">
-        <h3 className="mb-4">Languages</h3>
+        <h3>Languages</h3>
         <ul className="rb">
           <li>
             <p className="uppercase font-medium text-xl">Hungarian</p>
@@ -186,7 +192,7 @@ const About = () => {
       </div>
 
       <div className="rb-container-reverse w-[90vw] md:w-[50vw]">
-        <h3 className=" text-right mb-4">Certificates</h3>
+        <h3 className="text-right">Certificates</h3>
         <ul className="rb text-right">
           <li className="flex flex-col items-end">
             <p className="uppercase font-medium text-xl pb-3">Generative AI</p>

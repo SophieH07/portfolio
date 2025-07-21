@@ -21,6 +21,10 @@ body.theme-dark {
     nav {
         background: var(--backgrounddark);
     }
+    .skill {
+        color: black;
+        font-weight: 600;
+    }
 }
 
 body.theme-light {
@@ -74,6 +78,8 @@ body.theme-light {
 h3 {
     font-size: x-large;
     text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 /* FLOATING LAPTOP */

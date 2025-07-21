@@ -78,8 +78,7 @@ const Project = () => {
   }
 
   return (
-    <div className="section" id="project">
-      <h2 className="text-4xl font-bold uppercase sm:pb-9 pt-4">Projects</h2>
+    <div className="section flex w-screen flex-col" id="project">
       <div
         className={`fixed top-0 left-0 z-90 w-screen h-screen bg-black/70 flex justify-center items-center ${
           imageHidden ? "hidden" : ""
@@ -88,50 +87,28 @@ const Project = () => {
       >
         <img
           id="modal-image"
-          className="max-h-[95%] max-w-[95%] object-cover"
+          className="max-h-[95%] max-w-[95%] object-contain"
         />
       </div>
-      {/* max-h-[70vh] max-w-[97%] overflow-y-scroll  */}
-      <div className="gap-4 grid grid-flow-row sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 px-8 pb-7">
-        {projects.map((project) => (
-          <div key={project.id}>
-            <div className="rounded shadow-lg shadow-gray-900 bg-[#e34251] bg-opacity-40 hover:shadow-gray-600 text-center">
-              <p className="font-medium uppercase py-1">{project.title}</p>
-              <Link to={`/project/${project.slug}`}>
+
+      <div className="flex flex-wrap gap-6 justify-center md:mt-10 w-full">
+        {projects.map((project, i) => (
+          <div
+            key={project.name}
+            className="animate-flip-down w-2/3 md:w-[45%] lg:w-[30%]"
+          >
+            <div className="relative inline-flex justify-center text-center uppercase font-bold m-3 transition duration-300 ease-in-out hover:scale-105 w-full">
+              <Link to={`/project/${project.slug}`} className="block w-full">
                 <img
                   src={project.picture}
-                  className="rounded-t h-50 w-full object-cover cursor-pointer"
                   alt={project.title}
+                  className="w-full h-auto object-cover rounded-lg shadow-md"
                 />
+                <span className="cursor-default absolute inset-0 pt-20 sm:pt-24 md:pt-28 transition-all transform opacity-0 hover:bg-white hover:bg-opacity-70 hover:opacity-100 text-xl sm:text-2xl md:text-3xl text-black">
+                  {project.title}
+                </span>
+                <span className="md:hidden">{project.title}</span>
               </Link>
-              <p className="text-sm mb-4 px-2 text-justify">
-                {project.description}
-              </p>
-              <p className="text-sm mb-4 px-2 font-medium uppercase">
-                {project.language}
-              </p>
-              {project.code != "" ? (
-                <a
-                  href={project.code}
-                  target="_blank"
-                  className="uppercase font-bold hover:text-white"
-                >
-                  Github Code
-                </a>
-              ) : (
-                <p></p>
-              )}
-              {project.website != "" ? (
-                <a
-                  href={project.website}
-                  target="_blank"
-                  className="uppercase font-bold hover:text-white pl-2"
-                >
-                  Website Link
-                </a>
-              ) : (
-                <p></p>
-              )}
             </div>
           </div>
         ))}
