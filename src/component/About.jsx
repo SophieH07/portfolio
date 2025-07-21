@@ -1,3 +1,6 @@
+import generativeAI from "../documents/generativeai.jpeg";
+import googleUXdesign from "../documents/googleuxdesign.png";
+
 const About = () => {
   const skillSet = [
     {
@@ -75,7 +78,7 @@ const About = () => {
     },
     {
       company:
-        "Nyelvtudományi Kutatóközpont\nHungarian Research Centre for Linguistics",
+        "Nyelvtudományi Kutatóközpont / Hungarian Research Centre for Linguistics",
       role: "Software Developer",
       location: "Budapest, Hungary || remote",
       period: "2023 - 2025",
@@ -108,90 +111,106 @@ const About = () => {
   return (
     <div className="section" id="about">
       <h2 className="text-4xl font-bold uppercase sm:pb-9">About</h2>
-      <h3>Skills</h3>
+      {/* <h3>Skills</h3>
       <div className="flex flex-wrap cursor-default gap-4 uppercase font-normal bg-[#93e1d8] p-2">
         {skillSet.map(({ id, skill }) => (
           <p key={id}>{skill}</p>
         ))}
-      </div>
-
-      {/* Timeline Section */}
-      <div className="flex flex-col md:flex-row justify-between mt-12">
-        {/* Work Experience Timeline */}
-        <div className="w-full md:w-1/2 pr-4">
-          <h3 className="mb-6 font-bold text-2xl">Work Experience</h3>
-          <div className="relative ml-6">
-            {/* Vertical line */}
-            <div className="absolute left-0 top-0 h-full w-1 bg-gray-300 rounded"></div>
-            {workExperience.map((job, idx) => (
-              <div key={idx} className="mb-12 flex items-start relative">
-                {/* Timeline dot */}
-                <div className="absolute -left-3.5 top-2 w-4 h-4 bg-[#93e1d8] border-2 border-white rounded-full z-10"></div>
-                <div className="pl-6">
-                  <p className="uppercase font-medium text-xl py-1 whitespace-pre-line">
-                    {job.company}
-                  </p>
-                  <p>{job.role}</p>
-                  <p className="text-sm text-gray-500">{job.location}</p>
-                  <p className="text-sm text-gray-400">{job.period}</p>
-                  {job.tech && (
-                    <p className="text-sm text-gray-600">{job.tech}</p>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-        {/* Education Timeline */}
-        <div className="w-full md:w-1/2 pl-4 mt-12 md:mt-0">
-          <h3 className="mb-6 font-bold text-2xl">Education</h3>
-          <div className="relative ml-6">
-            {/* Vertical line */}
-            <div className="absolute left-0 top-0 h-full w-1 bg-gray-300 rounded"></div>
-            {education.map((edu, idx) => (
-              <div key={idx} className="mb-12 flex items-start relative">
-                {/* Timeline dot */}
-                <div className="absolute -left-3.5 top-2 w-4 h-4 bg-[#93e1d8] border-2 border-white rounded-full z-10"></div>
-                <div className="pl-6">
-                  <p className="uppercase font-medium text-xl py-1">
-                    {edu.school}
-                  </p>
-                  <p>{edu.degree}</p>
-                  <p className="text-sm text-gray-500">{edu.location}</p>
-                  <p className="text-sm text-gray-400">{edu.period}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Languages and Certificates */}
-      <div className="flex flex-col md:flex-row justify-between mt-12">
-        <div className="w-full md:w-1/2 pr-4">
-          <h3>Languages</h3>
+      </div> */}
+      {/* WORK EXPERIENCE */}
+      <div className="flex flex-col md:flex-row w-[90vw] md:w-[60vw] justify-between mt-12">
+        <div className="md:w-1/2">
           <div>
-            <p className="uppercase font-medium text-xl py-3">Hungarian</p>
+            <h3 className="mb-6 font-bold text-2xl">Work Experience</h3>
+          </div>
+          <div className="rb-container">
+            <ul className="rb">
+              {workExperience.map((job, idx) => (
+                <li key={idx} className="rb-item" ng-repeat="itembx">
+                  <div className="">
+                    <p className="uppercase font-medium text-xl whitespace-pre-line">
+                      {job.company}
+                    </p>
+                    <p>{job.role}</p>
+                    <p className="text-sm text-gray-500">{job.location}</p>
+                    <p className="text-sm text-gray-400">{job.period}</p>
+                    {job.tech && (
+                      <p className="text-sm text-gray-600">{job.tech}</p>
+                    )}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+      {/* EDUCATION */}
+      <div className="w-[90vw] md:w-[50vw] flex flex-col md:flex-row justify-end">
+        <div>
+          <h3 className="font-bold text-2xl text-right mb-4">Education</h3>
+          <div className="rb-container-reverse">
+            <ul className="rb">
+              {education.map((edu, idx) => (
+                <li
+                  key={idx}
+                  className="mb-12 flex items-start flex-row-reverse relative text-right"
+                >
+                  <div>
+                    <p className="uppercase font-medium text-xl">
+                      {edu.school}
+                    </p>
+                    <p>{edu.degree}</p>
+                    <p className="text-sm text-gray-500">{edu.location}</p>
+                    <p className="text-sm text-gray-400">{edu.period}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* LANGUAGES AND CERTIFICATES */}
+      <div className="rb-container w-[90vw] md:w-[50vw]">
+        <h3 className="mb-4">Languages</h3>
+        <ul className="rb">
+          <li>
+            <p className="uppercase font-medium text-xl">Hungarian</p>
             <p>Mother Tongue</p>
-          </div>
-          <div>
-            <p className="uppercase font-medium text-xl py-3">English</p>
+          </li>
+          <li>
+            <p className="uppercase font-medium text-xl">English</p>
             <p>C1 Advanced</p>
-          </div>
-        </div>
-        <div className="w-full md:w-1/2 pl-4 mt-12 md:mt-0">
-          <h3>Certificates</h3>
-          <div>
-            <p className="uppercase font-medium text-xl py-3">Generative AI</p>
-            <p>Mother Tongue</p>
-          </div>
-          <div>
-            <p className="uppercase font-medium text-xl py-3">
+          </li>
+        </ul>
+      </div>
+
+      <div className="rb-container-reverse w-[90vw] md:w-[50vw]">
+        <h3 className=" text-right mb-4">Certificates</h3>
+        <ul className="rb text-right">
+          <li className="flex flex-col items-end">
+            <p className="uppercase font-medium text-xl pb-3">Generative AI</p>
+            <p>
+              Óbudai Egyetem/University of Óbuda + Ai Akadémia/Neuron Solutions
+            </p>
+            <img
+              className="max-w-[80vw] md:max-w-md"
+              src={generativeAI}
+              alt="Certificate of Generative AI course"
+            />
+          </li>
+          <li className="flex flex-col items-end">
+            <p className="uppercase font-medium text-xl pb-3">
               Google UX Design Certificate
             </p>
-            <p>C1 Advanced</p>
-          </div>
-        </div>
+            <p>Google</p>
+            <img
+              className="max-w-[80vw] md:max-w-md"
+              src={googleUXdesign}
+              alt="Certificate of Google UX Design"
+            />
+          </li>
+        </ul>
       </div>
     </div>
   );
