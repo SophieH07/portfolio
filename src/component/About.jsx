@@ -9,7 +9,7 @@ const About = () => {
     },
     {
       id: 2,
-      skill: "PL/SQL",
+      skill: "Next.js",
     },
     {
       id: 3,
@@ -33,11 +33,11 @@ const About = () => {
     },
     {
       id: 8,
-      skill: "Svelte",
+      skill: "Typescript",
     },
     {
       id: 9,
-      skill: "Next.js",
+      skill: "PL/SQL",
     },
     {
       id: 10,
@@ -49,15 +49,11 @@ const About = () => {
     },
     {
       id: 12,
-      skill: "Auth0",
+      skill: "SCSS",
     },
     {
       id: 13,
       skill: "Docker",
-    },
-    {
-      id: 14,
-      skill: "Python",
     },
   ];
   // Timeline data for jobs and education
