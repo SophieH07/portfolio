@@ -78,7 +78,8 @@ const ProjectDetail = () => {
       <Link to="/projects" className="underline mb-4 inline-block">
         ← Back to Projects
       </Link>
-      <h2 className="text-4xl font-bold uppercase mb-4">{project.title}</h2>
+      <h1 className="text-5xl text-bold text-primary">UNDER DEVELOPMENT</h1>
+      {/* <h2 className="text-4xl font-bold uppercase mb-4">{project.title}</h2>
       <img
         src={project.picture}
         alt={project.title}
@@ -105,7 +106,7 @@ const ProjectDetail = () => {
         >
           Website Link
         </a>
-      )}
+      )} */}
     </div>
   );
 };

@@ -104,7 +104,7 @@ const Project = () => {
                   alt={project.title}
                   className="w-full h-auto object-cover rounded-lg shadow-md"
                 />
-                <span className="cursor-default absolute inset-0 pt-20 sm:pt-24 md:pt-28 transition-all transform opacity-0 hover:bg-white hover:bg-opacity-70 hover:opacity-100 text-xl sm:text-2xl md:text-3xl text-black">
+                <span className="cursor-pointer absolute inset-0 pt-20 sm:pt-24 md:pt-28 transition-all transform opacity-0 hover:bg-white hover:bg-opacity-70 hover:opacity-100 text-xl sm:text-2xl md:text-3xl text-black">
                   {project.title}
                 </span>
                 <span className="md:hidden">{project.title}</span>
