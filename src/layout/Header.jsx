@@ -1,9 +1,11 @@
 import { useState, useContext, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import { ThemeContext } from "../ThemeContext"; // import context
+import { ThemeContext } from "../ThemeContext";
+import { LuMoon } from "react-icons/lu";
+import { MdOutlineWbSunny } from "react-icons/md";
 
 const Header = () => {
-  const [theme, setTheme] = useContext(ThemeContext); // use context
+  const [theme, setTheme] = useContext(ThemeContext);
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -31,7 +33,9 @@ const Header = () => {
     <nav className="fixed z-50 flex items-center flex-wrap w-full uppercase justify-end md:justify-center ">
       {/* Theme slider */}
       <div className="absolute left-4 top-2 flex items-center gap-2">
-        <span className="text-xs">{theme === "dark" ? "🌙" : "☀️"}</span>
+        <span className="text-xs">
+          {theme === "dark" ? <LuMoon /> : <MdOutlineWbSunny />}
+        </span>
         <label className="flex items-center cursor-pointer">
           <input
             type="checkbox"

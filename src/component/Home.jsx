@@ -47,7 +47,7 @@ const Home = () => {
               <p>Zsófia</p>
               <p>Szaniszló</p>
             </div>
-            <div className="md:py-4 lg:text-3xl md:text-xl text-lg">
+            <div className="md:py-4 lg:text-3xl text-2xl py-3">
               I'm a{" "}
               <span className="text-primary border-r-2 border-primary pr-1">
                 {typed}

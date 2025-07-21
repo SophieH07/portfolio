@@ -54,7 +54,7 @@ const Contact = () => {
                   type="email"
                   id="email"
                   name="email"
-                  className="block w-full p-3 bg-white bg-opacity-70 border-gray-600 placeholder-gray-400 text-white focus:border-primary-500 shadow-sm-light rounded-lg"
+                  className="block w-full p-3 bg-white bg-opacity-70 border-gray-600 placeholder-gray-600 text-black focus:border-primary-500 shadow-sm-light rounded-lg"
                   placeholder="name@email.com"
                   required
                 />
@@ -67,7 +67,7 @@ const Contact = () => {
                   type="text"
                   id="subject"
                   name="subject"
-                  className="block w-full p-3 bg-white bg-opacity-70 border-gray-600 placeholder-gray-400 text-white focus:border-primary-500 shadow-sm-light rounded-lg"
+                  className="block w-full p-3 bg-white bg-opacity-70 border-gray-600 placeholder-gray-600 text-black focus:border-primary-500 shadow-sm-light rounded-lg"
                   placeholder="subject"
                   required
                 />
@@ -80,14 +80,14 @@ const Contact = () => {
                   id="message"
                   rows="8"
                   name="message"
-                  className="block w-full p-3 text-sm bg-white bg-opacity-70 border-gray-600 placeholder-gray-400 text-white focus:border-primary-500 shadow-sm-light rounded-lg"
-                  placeholder="Ask for my resume..."
+                  className="block w-full p-3 text-sm bg-white bg-opacity-70 border-gray-600 placeholder-gray-600 text-black focus:border-primary-500 shadow-sm-light rounded-lg"
+                  placeholder="Tell me about a job opportunity..."
                   required
                 ></textarea>
               </div>
               <button
                 type="submit"
-                className="p-3 text-sm font-medium text-center rounded-lg sm:w-fit bg-secondary hover:bg-opacity-60 focus:ring-primary-800"
+                className="text-white p-3 text-sm font-medium text-center rounded-lg sm:w-fit bg-secondary hover:bg-opacity-60 focus:ring-primary-800"
               >
                 Send message
               </button>

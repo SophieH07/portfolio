@@ -110,13 +110,13 @@ const About = () => {
 
   return (
     <div className="section" id="about">
-      <div className="flex text-center items-center justify-center gap-10 w-[60vw] mt-10">
+      <div className="md:flex text-center items-center justify-center gap-10 w-[90vw] md:w-[60vw] mt-10">
         <h3>Skills</h3>
-        <div className="flex flex-wrap cursor-default gap-6 uppercase font-normal p-2">
+        <div className="flex flex-wrap cursor-default gap-3 md:gap-6 uppercase font-normal p-2">
           {skillSet.map(({ id, skill }) => (
-            <div class="relative group">
-              <div class="absolute -inset-1 bg-gradient-to-r from-rose-300 to-rose-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-              <div class="skill relative px-3 py-4 bg-white  ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6">
+            <div key={id} class="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-rose-300 to-rose-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+              <div className="skill relative px-3 py-4 bg-white  ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6">
                 <p key={id}>{skill}</p>
               </div>
             </div>
@@ -138,11 +138,9 @@ const About = () => {
                       {job.company}
                     </p>
                     <p>{job.role}</p>
-                    <p className="text-sm text-gray-500">{job.location}</p>
-                    <p className="text-sm text-gray-400">{job.period}</p>
-                    {job.tech && (
-                      <p className="text-sm text-gray-600">{job.tech}</p>
-                    )}
+                    <p className="text-sm ">{job.location}</p>
+                    <p className="text-sm ">{job.period}</p>
+                    {job.tech && <p className="text-sm ">{job.tech}</p>}
                   </div>
                 </li>
               ))}
@@ -166,8 +164,8 @@ const About = () => {
                       {edu.school}
                     </p>
                     <p>{edu.degree}</p>
-                    <p className="text-sm text-gray-500">{edu.location}</p>
-                    <p className="text-sm text-gray-400">{edu.period}</p>
+                    <p className="text-sm ">{edu.location}</p>
+                    <p className="text-sm ">{edu.period}</p>
                   </div>
                 </li>
               ))}
