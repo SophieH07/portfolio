@@ -81,21 +81,21 @@ const Header = () => {
         }`}
       >
         {links.map(({ id, link, label }) => (
-          <li
-            key={id}
-            className="block text-center p-2 lg:p-4 font-medium text-lg cursor-pointer text-secondary-hover duration-200"
+          <NavLink
+            to={link}
+            onClick={() => setIsOpen(false)}
+            className={({ isActive }) =>
+              isActive ? "underline underline-offset-4 text-primary" : ""
+            }
+            end={link === "/"}
           >
-            <NavLink
-              to={link}
-              onClick={() => setIsOpen(false)}
-              className={({ isActive }) =>
-                isActive ? "underline underline-offset-4 text-primary" : ""
-              }
-              end={link === "/"}
+            <li
+              key={id}
+              className="block text-center p-2 lg:p-4 font-medium text-lg cursor-pointer text-secondary-hover duration-200"
             >
               {label}
-            </NavLink>
-          </li>
+            </li>
+          </NavLink>
         ))}
       </ul>
     </nav>

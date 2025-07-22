@@ -60,7 +60,7 @@ const Home = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={github} />
+                  <img src={github} alt="Link to Github"/>
                 </a>
               </div>
               <div className="cursor-pointer p-2 bg-secondary rounded-lg bg-secondary-hover">
@@ -69,7 +69,7 @@ const Home = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={linkedin} />
+                  <img src={linkedin} alt="Link to LinkedIn" />
                 </a>
               </div>
             </div>

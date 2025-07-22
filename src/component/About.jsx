@@ -56,21 +56,21 @@ const About = () => {
       skill: "Docker",
     },
   ];
-  // Timeline data for jobs and education
+
   const workExperience = [
     {
       company: "Prefixbox",
       role: "Technical Account Manager",
       location: "Budapest, Hungary || hybrid",
       period: "2025 - currently",
-      tech: "",
+      tech: "Customer Success (CSM), Technical Support, AI, API/Frontend Integration",
     },
     {
       company: "Dialogue Creatives",
       role: "Frontend Developer",
       location: "Budapest, Hungary || hybrid",
       period: "2024 - 2025",
-      tech: "",
+      tech: "JavaScript, TypeScript, React, Next.js, Tailwind CSS",
     },
     {
       company:
@@ -78,7 +78,7 @@ const About = () => {
       role: "Software Developer",
       location: "Budapest, Hungary || remote",
       period: "2023 - 2025",
-      tech: "PostgreSQL, Docker, Tailwind CSS, Next.js, Svelte",
+      tech: "PostgreSQL, Docker, Tailwind CSS, Next.js, Svelte, React, JavaScript, Python",
     },
     {
       company: "Agco Kft.",
