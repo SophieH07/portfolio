@@ -60,7 +60,7 @@ const Home = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={github} alt="Link to Github"/>
+                  <img src={github} alt="Link to Github" />
                 </a>
               </div>
               <div className="cursor-pointer p-2 bg-secondary rounded-lg bg-secondary-hover">
@@ -82,7 +82,7 @@ const Home = () => {
             </div>
             <div className="mt-3">
               <a
-                href="/documents/resume.pdf"
+                href="/resume.pdf"
                 download
                 className="inline-block text-white text-lg mt-4 px-4 py-2 bg-secondary rounded bg-secondary-hover"
               >
