@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import github from "../pics/github.png";
 import linkedin from "../pics/linkedin.png";
-import laptop from "../pics/watersplashlaptopotherside.jpg";
+import laptop from "../pics/watersplashlaptopotherside.webp";
 import { useState, useEffect } from "react";
 
 const roles = [
@@ -14,6 +14,13 @@ const Home = () => {
   const [roleIdx, setRoleIdx] = useState(0);
   const [typed, setTyped] = useState("");
   const [isTyping, setIsTyping] = useState(true);
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = laptop;
+    img.onload = () => setLoaded(true);
+  }, []);
 
   useEffect(() => {
     let timeout;
@@ -91,12 +98,14 @@ const Home = () => {
             </div>
           </div>
           <div className="laptop-container">
+            {loaded && (
             <img
               src={laptop}
               alt="Picture of a laptop"
               className="floating-laptop"
               tabIndex={0}
             />
+            )}
           </div>
         </div>
       </div>
